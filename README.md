@@ -181,7 +181,3 @@ The workbook's reported YoY series is retained for validation. The data-alignmen
 7. The source does not document every index's price-return vs total-return definition; dividend treatment must be verified before claiming investor total returns.
 8. Holm correction is within named test families; many hypothesis families are still examined overall.
 9. No causal or profitability claims, transaction costs, slippage, or out-of-sample trading strategy are evaluated.
-
-## 9. Suggested handoff for the final report
-
-After running `make full`, upload `reports/comparative_eda_and_hypothesis_report.md`, `reports/macro_hypotheses/unified_multi_index_macro_hypothesis_report.md`, `reports/dataset_size_audit.json`, the key CSV/JSON results, and any figures you want to include. The submission report can then be drafted from the actual generated outputs using the CSE558 LaTeX template, within the eight-page maximum.
