@@ -181,3 +181,60 @@ The workbook's reported YoY series is retained for validation. The data-alignmen
 7. The source does not document every index's price-return vs total-return definition; dividend treatment must be verified before claiming investor total returns.
 8. Holm correction is within named test families; many hypothesis families are still examined overall.
 9. No causal or profitability claims, transaction costs, slippage, or out-of-sample trading strategy are evaluated.
+
+# Team Contributions: Group 219 (CSE558 Data Science, Monsoon 2026)
+
+Project: Effects of Economic Factors on Investment Options in India: Evidence from NSE Sectoral Indices
+
+| # | Member | Roll no. | Area of ownership |
+|---|--------|----------|-------------------|
+| 1 | Sarvagya Raut | MT25083 | Data ingestion, cleaning and data-quality audit |
+| 2 | Abhinav | MT25009 | Feature encoding, dataset-size audit, JSONL export, tests, H6 (IIP) |
+| 3 | Prabhakar | MT25034 | Comparative EDA, figures, pairwise cross-index tests |
+| 4 | Anand | MT25014 | Macro hypotheses H1 (USD/INR), H2 (CPI), H3 (FX reserves) |
+| 5 | Rishabh Bajapai | MT25079 | Macro hypotheses H4 (repo event study), H5 (GVA), H7 (prior US S&P 500) |
+
+## 1. Sarvagya Raut (MT25083): Data pipeline and quality audit
+- Parsed the 2,652 daily snapshots (`ind_close_all_DDMMYYYY.csv`) and built the 180-index master panel.
+- Used the filename date as the canonical snapshot date and flagged the 3 conflicting internal date labels.
+- Handled the `_missing_dates.log` entries and de-duplicated index-date keys.
+- Built the 16-index common-date close and return panels.
+- Wrote `reports/sector_data_quality_audit.md/.json`.
+- Maintained `config/sector_universe.json` and the Makefile target `make clean-validate`.
+- Report sections: 1 (Dataset and problem statement) and 2 (Data preparation).
+
+## 2. Abhinav (MT25009): Encoding, size audit, export, testing, H6
+- Implemented numeric feature engineering (19 features), per-index and global median imputation, and one-hot encoding of index name (180) and group (6).
+- Produced `sector_index_features_encoded.npz`, `encoded_feature_columns.json` and `dataset_size_audit.json`.
+- Verified 256,577 × 205 = 52,598,285 cells (≥ 3,000,000).
+- Built the JSONL export (`make export-jsonl`, `json_dataset_manifest.json`).
+- Wrote the test suite and artifact checks (`make test`).
+- Implemented H6: lagged one-reference-month YoY IIP growth vs monthly returns.
+- Report sections: 5 (Discussion and limitations), Appendix A (per-index table) and README maintenance.
+
+## 3. Prabhakar (MT25034): Comparative EDA
+- Computed descriptive statistics, normalized performance, return distributions, rolling 20/60-session volatility, drawdowns and correlations (`make eda`).
+- Implemented the three pairwise test families (mean return, mean absolute return, conditional downside; 120 pairs each) with HAC standard errors and Holm adjustment.
+- Produced Figures 1–4 and 5–7 and the EDA tables.
+- Wrote `reports/comparative_eda_and_hypothesis_report.md`.
+- Report section: 3 (EDA and research questions: performance, risk, co-movement and tails).
+
+## 4. Anand (MT25014): H1, H2, H3
+- H1: daily OLS of index return on USD/INR % change with Newey-West HAC errors.
+- H2: CPI-derived YoY inflation (`100 × (CPI_t / CPI_t-12 − 1)`), same-month and one-month-lag specifications, and validation against reported CPI.
+- H3: weekly returns on reserve change controlling for USD/INR, plus the future-reserves lead diagnostic.
+- Made Holm adjustments across 16 indices and the direct pairwise coefficient-difference tests for these families.
+- Produced Figures 8–10 and the Makefile targets `make h1`, `h2`, `h3`.
+- Report sections: 4 (Statistical inference framework), 4.1, 4.2 and 4.3.
+
+## 5. Rishabh Bajapai (MT25079): H4, H5, H7
+- H4: repo-rate effective-date event study (3-session CAR over [t−1, t+1], estimation window [t−120, t−21], ≥ 80 observations), with a t-test per index and Holm correction.
+- H5: lagged quarterly real GVA growth (12 observations per index; exploratory).
+- H7: prior US-session S&P 500 return (strictly before the Indian date) with the index's own lag as control.
+- Produced Figures 11–15 and the Makefile targets `make h4`, `h5`, `h7`, `macro`.
+- Report sections: 4.4, 4.5 and Appendix B (diagnostics figures).
+
+## Shared work
+- All members reviewed each other's code via pull requests.
+- All members reviewed and proofread the final report.
+- `make full` was run end-to-end by the team before submission.
