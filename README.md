@@ -170,7 +170,7 @@ The workbook's reported YoY series is retained for validation. The data-alignmen
 - A p-value is not an effect-size measure, and non-significance is not proof of no effect.
 - These are observational associations, not identified causal effects or trading-strategy results.
 
-## 8. Limitations that must remain in the report
+## 8. Limitations that are present in the report
 
 1. The archive's missing-date log has not been independently checked against the official NSE session calendar.
 2. Three internal date labels disagree with filename dates; the filename was used as canonical and these rows are flagged.
