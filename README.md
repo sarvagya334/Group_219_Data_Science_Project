@@ -234,7 +234,3 @@ Project: Effects of Economic Factors on Investment Options in India: Evidence fr
 - Produced Figures 11–15 and the Makefile targets `make h4`, `h5`, `h7`, `macro`.
 - Report sections: 4.4, 4.5 and Appendix B (diagnostics figures).
 
-## Shared work
-- All members reviewed each other's code via pull requests.
-- All members reviewed and proofread the final report.
-- `make full` was run end-to-end by the team before submission.
