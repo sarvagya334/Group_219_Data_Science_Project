@@ -1,0 +1,59 @@
+{
+  "generated_by": "scripts/run_macro_hypotheses.py",
+  "index_start": "2016-01-05",
+  "index_end": "2026-09-30",
+  "common_price_observations": 2650,
+  "daily_return_observations": 2649,
+  "fx_rows": 6812,
+  "reserve_rows": 1336,
+  "repo_event_rows": 58,
+  "gva_quarters": 17,
+  "gva_yoy_non_null": 13,
+  "iip_months": 104,
+  "iip_yoy_non_null": 92,
+  "sp500_rows": 2513,
+  "cpi_inflation_audit": {
+    "definition": "Derived CPI inflation YoY = 100 * (CPI_index_t / CPI_index_t-12 - 1).",
+    "cpi_start_date": "2013-01-31",
+    "cpi_end_date": "2025-12-31",
+    "months": 156,
+    "derived_yoy_non_null": 144,
+    "reported_yoy_non_null": 144,
+    "derived_vs_reported_comparison_n": 144,
+    "derived_vs_reported_correlation": 0.9999986217439643,
+    "derived_minus_reported_mae_percentage_points": 0.0024572867348339775,
+    "note": "The workbook's month is a reference period; a publication timestamp was not supplied. Same-month models are contemporaneous associations, not release-timed predictive tests. The lagged-reference model is only a timing sensitivity proxy."
+  },
+  "index_names": [
+    "Nifty Auto",
+    "Nifty Bank",
+    "Nifty Commodities",
+    "Nifty Energy",
+    "Nifty FMCG",
+    "Nifty Financial Services",
+    "Nifty Infrastructure",
+    "Nifty IT",
+    "Nifty Media",
+    "Nifty Metal",
+    "Nifty Pharma",
+    "Nifty Private Bank",
+    "Nifty PSU Bank",
+    "Nifty PSE",
+    "Nifty Realty",
+    "Nifty Services Sector"
+  ],
+  "macro_files": [
+    "Quarterly Estimates of Gross Value Added At Basic Price (At Constant Prices) New Series (Base _ 2022-23).xlsx",
+    "sp500_historical.csv",
+    "rbi_repo_rate.xlsx",
+    "50 Macroeconomic Indicators.xlsx",
+    "Daily Exchange Rate of the Indian Rupee.xlsx",
+    "RBIB Table No. 33 _ Foreign Exchange Reserves - Weekly.xlsx",
+    "CPI - Rural, Urban, Combined.xlsx"
+  ],
+  "limitations": [
+    "Same date alignment across indices does not certify official NSE session completeness.",
+    "Macro reference periods do not always equal publication/availability dates.",
+    "GVA uses only the supplied 2022-23 base-year series."
+  ]
+}

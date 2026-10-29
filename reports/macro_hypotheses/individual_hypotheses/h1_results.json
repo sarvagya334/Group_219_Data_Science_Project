@@ -1,0 +1,3160 @@
+{
+  "id": "H1",
+  "title": "USD/INR changes and daily index returns",
+  "null": "USD/INR percentage change has zero linear association with same-date index daily return; for pairwise tests, its slope is equal across indices.",
+  "alternative": "Association/slope is nonzero or differs by index.",
+  "frequency": "daily",
+  "outcome_unit": "percentage points per session",
+  "predictors": [
+    "usd_inr_change_pct"
+  ],
+  "by_index": {
+    "Nifty Auto": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.06608768501049522,
+      "coefficients": {
+        "const": 0.06571078253104805,
+        "usd_inr_change_pct": -1.1797150189318242
+      },
+      "standard_errors_hac": {
+        "const": 0.026454122658562902,
+        "usd_inr_change_pct": 0.14337545169011298
+      },
+      "p_values": {
+        "const": 0.012993316010251504,
+        "usd_inr_change_pct": 1.9012362915378487e-16
+      },
+      "confidence_intervals_95": {
+        "const": [
+          0.013861654877659772,
+          0.11755991018443632
+        ],
+        "usd_inr_change_pct": [
+          -1.460725740511608,
+          -0.8987042973520403
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -1.1797150189318242,
+      "focus_p_value": 1.9012362915378487e-16,
+      "focus_ci95": [
+        -1.460725740511608,
+        -0.8987042973520403
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 9.506181457689244e-16,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Bank": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.09436894617100577,
+      "coefficients": {
+        "const": 0.07358744909946541,
+        "usd_inr_change_pct": -1.373890617150503
+      },
+      "standard_errors_hac": {
+        "const": 0.025187307994220868,
+        "usd_inr_change_pct": 0.14899027170342394
+      },
+      "p_values": {
+        "const": 0.003482291395439011,
+        "usd_inr_change_pct": 2.933980114988405e-20
+      },
+      "confidence_intervals_95": {
+        "const": [
+          0.02422123256327472,
+          0.1229536656356561
+        ],
+        "usd_inr_change_pct": [
+          -1.665906183736051,
+          -1.081875050564955
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -1.373890617150503,
+      "focus_p_value": 2.933980114988405e-20,
+      "focus_ci95": [
+        -1.665906183736051,
+        -1.081875050564955
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 2.933980114988405e-19,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Commodities": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.08475487352457145,
+      "coefficients": {
+        "const": 0.07406911259375391,
+        "usd_inr_change_pct": -1.2140593127127968
+      },
+      "standard_errors_hac": {
+        "const": 0.023240927065849234,
+        "usd_inr_change_pct": 0.12194430655186696
+      },
+      "p_values": {
+        "const": 0.0014375082893644672,
+        "usd_inr_change_pct": 2.377803880704417e-23
+      },
+      "confidence_intervals_95": {
+        "const": [
+          0.028517732577367262,
+          0.11962049261014057
+        ],
+        "usd_inr_change_pct": [
+          -1.4530657616741678,
+          -0.9750528637514257
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -1.2140593127127968,
+      "focus_p_value": 2.377803880704417e-23,
+      "focus_ci95": [
+        -1.4530657616741678,
+        -0.9750528637514257
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 3.3289254329861836e-22,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Energy": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.05714827936047662,
+      "coefficients": {
+        "const": 0.07762449007747889,
+        "usd_inr_change_pct": -1.0304912207203283
+      },
+      "standard_errors_hac": {
+        "const": 0.024665928137058132,
+        "usd_inr_change_pct": 0.11317814983634389
+      },
+      "p_values": {
+        "const": 0.0016493633983703769,
+        "usd_inr_change_pct": 8.623718584733936e-20
+      },
+      "confidence_intervals_95": {
+        "const": [
+          0.029280159283591796,
+          0.125968820871366
+        ],
+        "usd_inr_change_pct": [
+          -1.25231631823644,
+          -0.8086661232042165
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -1.0304912207203283,
+      "focus_p_value": 8.623718584733936e-20,
+      "focus_ci95": [
+        -1.25231631823644,
+        -0.8086661232042165
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 7.379768413959999e-19,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty FMCG": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.04211145566224317,
+      "coefficients": {
+        "const": 0.04588136441942602,
+        "usd_inr_change_pct": -0.6883089950683267
+      },
+      "standard_errors_hac": {
+        "const": 0.01956245398235253,
+        "usd_inr_change_pct": 0.09693655569447096
+      },
+      "p_values": {
+        "const": 0.019007758401613957,
+        "usd_inr_change_pct": 1.2420447605063008e-12
+      },
+      "confidence_intervals_95": {
+        "const": [
+          0.007539659164792913,
+          0.08422306967405913
+        ],
+        "usd_inr_change_pct": [
+          -0.8783011530148508,
+          -0.4983168371218025
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -0.6883089950683267,
+      "focus_p_value": 1.2420447605063008e-12,
+      "focus_ci95": [
+        -0.8783011530148508,
+        -0.4983168371218025
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 3.726134281518902e-12,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Financial Services": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.10624960367307323,
+      "coefficients": {
+        "const": 0.07413133654539242,
+        "usd_inr_change_pct": -1.4014556865361147
+      },
+      "standard_errors_hac": {
+        "const": 0.02336967963518333,
+        "usd_inr_change_pct": 0.13838072982491129
+      },
+      "p_values": {
+        "const": 0.001513325048662563,
+        "usd_inr_change_pct": 4.170297663338119e-24
+      },
+      "confidence_intervals_95": {
+        "const": [
+          0.028327606130193944,
+          0.11993506696059089
+        ],
+        "usd_inr_change_pct": [
+          -1.6726769331473086,
+          -1.130234439924921
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -1.4014556865361147,
+      "focus_p_value": 4.170297663338119e-24,
+      "focus_ci95": [
+        -1.6726769331473086,
+        -1.130234439924921
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 6.255446495007179e-23,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Infrastructure": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.08727786028141171,
+      "coefficients": {
+        "const": 0.0647994722331671,
+        "usd_inr_change_pct": -1.132384110902726
+      },
+      "standard_errors_hac": {
+        "const": 0.02108469745211882,
+        "usd_inr_change_pct": 0.11630709141593165
+      },
+      "p_values": {
+        "const": 0.0021170986451835246,
+        "usd_inr_change_pct": 2.1139797831064252e-22
+      },
+      "confidence_intervals_95": {
+        "const": [
+          0.02347422460209076,
+          0.10612471986424343
+        ],
+        "usd_inr_change_pct": [
+          -1.3603418212245597,
+          -0.9044264005808922
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -1.132384110902726,
+      "focus_p_value": 2.1139797831064252e-22,
+      "focus_ci95": [
+        -1.3603418212245597,
+        -0.9044264005808922
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 2.7481737180383527e-21,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty IT": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.014231434035102408,
+      "coefficients": {
+        "const": 0.057281860349852685,
+        "usd_inr_change_pct": -0.5342491045605007
+      },
+      "standard_errors_hac": {
+        "const": 0.026317125115345105,
+        "usd_inr_change_pct": 0.12753795364185783
+      },
+      "p_values": {
+        "const": 0.029510408654842536,
+        "usd_inr_change_pct": 2.8025787617059748e-05
+      },
+      "confidence_intervals_95": {
+        "const": [
+          0.005701242947141763,
+          0.10886247775256361
+        ],
+        "usd_inr_change_pct": [
+          -0.784218900360481,
+          -0.2842793087605203
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -0.5342491045605007,
+      "focus_p_value": 2.8025787617059748e-05,
+      "focus_ci95": [
+        -0.784218900360481,
+        -0.2842793087605203
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 2.8025787617059748e-05,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Media": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.02745987674912853,
+      "coefficients": {
+        "const": 0.0048433817171207715,
+        "usd_inr_change_pct": -0.9577936372003518
+      },
+      "standard_errors_hac": {
+        "const": 0.03316513730449228,
+        "usd_inr_change_pct": 0.12509575971378534
+      },
+      "p_values": {
+        "const": 0.8838911190846475,
+        "usd_inr_change_pct": 1.9109309163549172e-14
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.06015909294200991,
+          0.06984585637625146
+        ],
+        "usd_inr_change_pct": [
+          -1.2029768208580478,
+          -0.712610453542656
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -0.9577936372003518,
+      "focus_p_value": 1.9109309163549172e-14,
+      "focus_ci95": [
+        -1.2029768208580478,
+        -0.712610453542656
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 7.643723665419669e-14,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Metal": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.06075538830637628,
+      "coefficients": {
+        "const": 0.10550023879176518,
+        "usd_inr_change_pct": -1.443617854935102
+      },
+      "standard_errors_hac": {
+        "const": 0.0329329443530579,
+        "usd_inr_change_pct": 0.15373084158409703
+      },
+      "p_values": {
+        "const": 0.0013577446059983766,
+        "usd_inr_change_pct": 5.968517229788476e-21
+      },
+      "confidence_intervals_95": {
+        "const": [
+          0.04095285395490994,
+          0.17004762362862041
+        ],
+        "usd_inr_change_pct": [
+          -1.7449247677529647,
+          -1.1423109421172393
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -1.443617854935102,
+      "focus_p_value": 5.968517229788476e-21,
+      "focus_ci95": [
+        -1.7449247677529647,
+        -1.1423109421172393
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 6.565368952767323e-20,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Pharma": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.011746493713620021,
+      "coefficients": {
+        "const": 0.04681377737387412,
+        "usd_inr_change_pct": -0.4329539758734603
+      },
+      "standard_errors_hac": {
+        "const": 0.02463771365733303,
+        "usd_inr_change_pct": 0.09744113204317449
+      },
+      "p_values": {
+        "const": 0.057421820885538814,
+        "usd_inr_change_pct": 8.861574506522586e-06
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.0014752540559092309,
+          0.09510280880365747
+        ],
+        "usd_inr_change_pct": [
+          -0.6239350852908941,
+          -0.24197286645602648
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -0.4329539758734603,
+      "focus_p_value": 8.861574506522586e-06,
+      "focus_ci95": [
+        -0.6239350852908941,
+        -0.24197286645602648
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 1.7723149013045172e-05,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Private Bank": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.09120623699725672,
+      "coefficients": {
+        "const": 0.06909682304596887,
+        "usd_inr_change_pct": -1.3732961077590908
+      },
+      "standard_errors_hac": {
+        "const": 0.025729541824084008,
+        "usd_inr_change_pct": 0.16214607860687247
+      },
+      "p_values": {
+        "const": 0.007242020838730643,
+        "usd_inr_change_pct": 2.4644998715255282e-17
+      },
+      "confidence_intervals_95": {
+        "const": [
+          0.01866784773204721,
+          0.11952579835989052
+        ],
+        "usd_inr_change_pct": [
+          -1.6910965820629613,
+          -1.0554956334552204
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -1.3732961077590908,
+      "focus_p_value": 2.4644998715255282e-17,
+      "focus_ci95": [
+        -1.6910965820629613,
+        -1.0554956334552204
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 1.478699922915317e-16,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty PSU Bank": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.05115652459206954,
+      "coefficients": {
+        "const": 0.08238173515807053,
+        "usd_inr_change_pct": -1.5554115369677006
+      },
+      "standard_errors_hac": {
+        "const": 0.03944453597233605,
+        "usd_inr_change_pct": 0.16337073695716095
+      },
+      "p_values": {
+        "const": 0.03674859372575885,
+        "usd_inr_change_pct": 1.7193777820849373e-21
+      },
+      "confidence_intervals_95": {
+        "const": [
+          0.0050718652653972685,
+          0.15969160505074378
+        ],
+        "usd_inr_change_pct": [
+          -1.8756122975315028,
+          -1.2352107764038984
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -1.5554115369677006,
+      "focus_p_value": 1.7193777820849373e-21,
+      "focus_ci95": [
+        -1.8756122975315028,
+        -1.2352107764038984
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 2.0632533385019247e-20,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty PSE": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.05599630525020327,
+      "coefficients": {
+        "const": 0.06673771197411495,
+        "usd_inr_change_pct": -1.0600100334306681
+      },
+      "standard_errors_hac": {
+        "const": 0.025671496051074192,
+        "usd_inr_change_pct": 0.12300215001037174
+      },
+      "p_values": {
+        "const": 0.009331033451343715,
+        "usd_inr_change_pct": 6.824256290008677e-18
+      },
+      "confidence_intervals_95": {
+        "const": [
+          0.016422504284747313,
+          0.11705291966348258
+        ],
+        "usd_inr_change_pct": [
+          -1.3010898174719898,
+          -0.8189302493893464
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -1.0600100334306681,
+      "focus_p_value": 6.824256290008677e-18,
+      "focus_ci95": [
+        -1.3010898174719898,
+        -0.8189302493893464
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 4.7769794030060743e-17,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Realty": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.0689532965905052,
+      "coefficients": {
+        "const": 0.09513252076788507,
+        "usd_inr_change_pct": -1.6107046695191796
+      },
+      "standard_errors_hac": {
+        "const": 0.03656044101528934,
+        "usd_inr_change_pct": 0.1524728704974778
+      },
+      "p_values": {
+        "const": 0.009266519789136028,
+        "usd_inr_change_pct": 4.381811226587649e-26
+      },
+      "confidence_intervals_95": {
+        "const": [
+          0.023475373119016957,
+          0.1667896684167532
+        ],
+        "usd_inr_change_pct": [
+          -1.9095460043136758,
+          -1.3118633347246833
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -1.6107046695191796,
+      "focus_p_value": 4.381811226587649e-26,
+      "focus_ci95": [
+        -1.9095460043136758,
+        -1.3118633347246833
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 7.010897962540238e-25,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Services Sector": {
+      "status": "tested",
+      "n": 2590,
+      "r_squared": 0.09472094685132215,
+      "coefficients": {
+        "const": 0.06315526159299147,
+        "usd_inr_change_pct": -1.1171529115858196
+      },
+      "standard_errors_hac": {
+        "const": 0.019672317768538488,
+        "usd_inr_change_pct": 0.12262246643977413
+      },
+      "p_values": {
+        "const": 0.0013256790161697222,
+        "usd_inr_change_pct": 8.199742682177777e-20
+      },
+      "confidence_intervals_95": {
+        "const": [
+          0.024598227274228668,
+          0.10171229591175426
+        ],
+        "usd_inr_change_pct": [
+          -1.3574885295032484,
+          -0.8768172936683909
+        ]
+      },
+      "focus_predictor": "usd_inr_change_pct",
+      "focus_estimate": -1.1171529115858196,
+      "focus_p_value": 8.199742682177777e-20,
+      "focus_ci95": [
+        -1.3574885295032484,
+        -0.8768172936683909
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 1,
+      "p_value_holm_across_indices": 7.379768413959999e-19,
+      "reject_h0_after_holm_across_indices": true
+    }
+  },
+  "pairwise_slope_tests": [
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Auto and Nifty Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Auto and Nifty Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.19417559821868194,
+      "p_value": 0.02621197961165119,
+      "ci95": [
+        0.022980150941758704,
+        0.3653710454956052
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.9436312660194429,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Commodities",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Auto and Nifty Commodities (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Auto and Nifty Commodities",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.03434429378097339,
+      "p_value": 0.6404426900879345,
+      "ci95": [
+        -0.10977146461391368,
+        0.17846005217586047
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Energy",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Auto and Nifty Energy (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Auto and Nifty Energy",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.14922379821149503,
+      "p_value": 0.11511076511930021,
+      "ci95": [
+        -0.3348466932069607,
+        0.0363990967839706
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty FMCG",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Auto and Nifty FMCG (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Auto and Nifty FMCG",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.49140602386349647,
+      "p_value": 3.430880797846593e-08,
+      "ci95": [
+        -0.6659541887043645,
+        -0.3168578590226284
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 2.984866294126536e-06,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Financial Services",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Auto and Nifty Financial Services (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Auto and Nifty Financial Services",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.22174066760429162,
+      "p_value": 0.004361271661654353,
+      "ci95": [
+        0.06928962925625662,
+        0.37419170595232665
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.2049797680977546,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Auto and Nifty Infrastructure (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Auto and Nifty Infrastructure",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.04733090802909656,
+      "p_value": 0.5147147232144385,
+      "ci95": [
+        -0.18971751950185325,
+        0.09505570344366013
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Auto and Nifty IT (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Auto and Nifty IT",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.6454659143713224,
+      "p_value": 3.698330283062787e-07,
+      "ci95": [
+        -0.8943100957534736,
+        -0.39662173298917114
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 3.069614134942113e-05,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Auto and Nifty Media (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Auto and Nifty Media",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.22192138173147127,
+      "p_value": 0.03531279537862447,
+      "ci95": [
+        -0.42857644796648997,
+        -0.015266315496452548
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Auto and Nifty Metal (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Auto and Nifty Metal",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.26390283600328107,
+      "p_value": 0.01059747794826049,
+      "ci95": [
+        0.061515905207651045,
+        0.4662897667989111
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.4344965958786801,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Auto and Nifty Pharma (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Auto and Nifty Pharma",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.7467610430583631,
+      "p_value": 8.07401483528341e-10,
+      "ci95": [
+        -0.9850019378915083,
+        -0.508520148225218
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 7.831794390224907e-08,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Auto and Nifty Private Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Auto and Nifty Private Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.19358108882726918,
+      "p_value": 0.03949427653362323,
+      "ci95": [
+        0.009311037650055698,
+        0.37785114000448267
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Auto and Nifty PSU Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Auto and Nifty PSU Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.3756965180358754,
+      "p_value": 0.005460448623870233,
+      "ci95": [
+        0.11068225069870341,
+        0.6407107853730474
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.2511806366980307,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Auto and Nifty PSE (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Auto and Nifty PSE",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.11970498550115512,
+      "p_value": 0.21782712138232085,
+      "ci95": [
+        -0.31009077086821046,
+        0.07068079986590022
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Auto and Nifty Realty (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Auto and Nifty Realty",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.43098965058735583,
+      "p_value": 2.2966351021687775e-06,
+      "ci95": [
+        0.25222715426640124,
+        0.6097521469083105
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.0001837308081735022,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Auto and Nifty Services Sector (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Auto and Nifty Services Sector",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.0625621073460036,
+      "p_value": 0.41812323543822316,
+      "ci95": [
+        -0.21400372047251426,
+        0.08887950578050706
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Commodities",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Bank and Nifty Commodities (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Bank and Nifty Commodities",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.1598313044377086,
+      "p_value": 0.07203574560614824,
+      "ci95": [
+        -0.3339738196639376,
+        0.014311210788520407
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Energy",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Bank and Nifty Energy (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Bank and Nifty Energy",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.3433993964301769,
+      "p_value": 0.0013536986344563787,
+      "ci95": [
+        -0.5534424217036582,
+        -0.1333563711566956
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.07309972626064445,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty FMCG",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Bank and Nifty FMCG (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Bank and Nifty FMCG",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.6855816220821792,
+      "p_value": 3.4560980379822716e-12,
+      "ci95": [
+        -0.8787050091250401,
+        -0.4924582350393183
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 3.7325858810208536e-10,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Financial Services",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Bank and Nifty Financial Services (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Bank and Nifty Financial Services",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.027565069385609653,
+      "p_value": 0.37951689891296236,
+      "ci95": [
+        -0.03391348814342764,
+        0.08904362691464696
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Bank and Nifty Infrastructure (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Bank and Nifty Infrastructure",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.24150650624777856,
+      "p_value": 0.0027650079894961537,
+      "ci95": [
+        -0.39967152591616023,
+        -0.08334148657939688
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.1437804154538,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Bank and Nifty IT (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Bank and Nifty IT",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.8396415125900047,
+      "p_value": 8.400156690775259e-12,
+      "ci95": [
+        -1.0805336886648131,
+        -0.5987493365151964
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 8.904166092221775e-10,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Bank and Nifty Media (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Bank and Nifty Media",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.4160969799501533,
+      "p_value": 0.00013339093606720692,
+      "ci95": [
+        -0.6295815674237438,
+        -0.20261239247656285
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.009070583652570071,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Bank and Nifty Metal (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Bank and Nifty Metal",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.06972723778459883,
+      "p_value": 0.5499951364939352,
+      "ci95": [
+        -0.15889491795346086,
+        0.29834939352265855
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Bank and Nifty Pharma (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Bank and Nifty Pharma",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.9409366412770456,
+      "p_value": 1.6507294336426953e-12,
+      "ci95": [
+        -1.2021107192014906,
+        -0.6797625633526005
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.7992950826705378e-10,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Bank and Nifty Private Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Bank and Nifty Private Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.0005945093914128607,
+      "p_value": 0.9783370882042349,
+      "ci95": [
+        -0.04350630362700093,
+        0.04231728484417521
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Bank and Nifty PSU Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Bank and Nifty PSU Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.18152091981719357,
+      "p_value": 0.11064169028354076,
+      "ci95": [
+        -0.04149105141601367,
+        0.4045328910504008
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Bank and Nifty PSE (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Bank and Nifty PSE",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.31388058371983707,
+      "p_value": 0.003474820382679246,
+      "ci95": [
+        -0.5243994976543624,
+        -0.10336166978531164
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.17374101913396228,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Bank and Nifty Realty (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Bank and Nifty Realty",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.23681405236867373,
+      "p_value": 0.012157899143432516,
+      "ci95": [
+        0.05171261514335318,
+        0.4219154895939943
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.4863159657373006,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Bank and Nifty Services Sector (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Bank and Nifty Services Sector",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.25673770556468567,
+      "p_value": 1.8883157908084453e-08,
+      "ci95": [
+        -0.34624367807771955,
+        -0.1672317330516518
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.6806010538195164e-06,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Energy",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Commodities and Nifty Energy (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Commodities and Nifty Energy",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.18356809199246818,
+      "p_value": 0.0003721955683340391,
+      "ci95": [
+        -0.28465872779885487,
+        -0.08247745618608149
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.022703929668376383,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty FMCG",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Commodities and Nifty FMCG (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Commodities and Nifty FMCG",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.52575031764447,
+      "p_value": 2.6785641027132406e-10,
+      "ci95": [
+        -0.6888913346111523,
+        -0.36260930067778774
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 2.7055847875084017e-08,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Financial Services",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Commodities and Nifty Financial Services (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Commodities and Nifty Financial Services",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.18739637382331803,
+      "p_value": 0.02010761969662177,
+      "ci95": [
+        0.02937682846098455,
+        0.3454159191856515
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.7459878531843409,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Commodities and Nifty Infrastructure (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Commodities and Nifty Infrastructure",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.08167520181007003,
+      "p_value": 0.07009878860773458,
+      "ci95": [
+        -0.17005534108224615,
+        0.0067049374621060975
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Commodities and Nifty IT (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Commodities and Nifty IT",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.6798102081522956,
+      "p_value": 2.5610069528792406e-09,
+      "ci95": [
+        -0.9034610604829292,
+        -0.4561593558216621
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 2.3561263966489013e-07,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Commodities and Nifty Media (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Commodities and Nifty Media",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.2562656755124453,
+      "p_value": 0.0034013533760026003,
+      "ci95": [
+        -0.4277522499415084,
+        -0.08477910108338216
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.1734690221761326,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Commodities and Nifty Metal (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Commodities and Nifty Metal",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.22955854222230737,
+      "p_value": 0.00043930196397651457,
+      "ci95": [
+        0.10156664475767291,
+        0.35755043968694183
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.026358117838590874,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Commodities and Nifty Pharma (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Commodities and Nifty Pharma",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.7811053368393364,
+      "p_value": 7.702316642762402e-15,
+      "ci95": [
+        -0.9780768881913637,
+        -0.584133785487309
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 8.780640972749139e-13,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Commodities and Nifty Private Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Commodities and Nifty Private Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.1592367950462957,
+      "p_value": 0.11129260372454265,
+      "ci95": [
+        -0.036754424021374105,
+        0.35522801411396554
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Commodities and Nifty PSU Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Commodities and Nifty PSU Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.341352224254902,
+      "p_value": 0.003662597177885781,
+      "ci95": [
+        0.1111137039693812,
+        0.5715907445404229
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.17946726171640326,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Commodities and Nifty PSE (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Commodities and Nifty PSE",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.1540492792821283,
+      "p_value": 0.0011572904352367035,
+      "ci95": [
+        -0.24697393853592703,
+        -0.061124620028329565
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.06365097393801869,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Commodities and Nifty Realty (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Commodities and Nifty Realty",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.3966453568063821,
+      "p_value": 2.146710041875504e-05,
+      "ci95": [
+        0.213684674574128,
+        0.5796060390386362
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.001610032531406628,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Commodities and Nifty Services Sector (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Commodities and Nifty Services Sector",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.09690640112697708,
+      "p_value": 0.17548663356867633,
+      "ci95": [
+        -0.237100827029383,
+        0.04328802477542883
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty FMCG",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Energy and Nifty FMCG (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Energy and Nifty FMCG",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.3421822256520019,
+      "p_value": 0.00015668425567280834,
+      "ci95": [
+        -0.5195960436315482,
+        -0.16476840767245562
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.010497845130078159,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Financial Services",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Energy and Nifty Financial Services (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Energy and Nifty Financial Services",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.37096446581578674,
+      "p_value": 0.00019640018506899775,
+      "ci95": [
+        0.17570274779276804,
+        0.5662261838388054
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.012766012029484854,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Energy and Nifty Infrastructure (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Energy and Nifty Infrastructure",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.10189289018239833,
+      "p_value": 0.08235863219690227,
+      "ci95": [
+        -0.013068425400819775,
+        0.21685420576561643
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Energy and Nifty IT (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Energy and Nifty IT",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.4962421161598277,
+      "p_value": 5.3920347802138806e-05,
+      "ci95": [
+        -0.7371110425955043,
+        -0.25537318972415113
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.003720503998347578,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Energy and Nifty Media (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Energy and Nifty Media",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.07269758351997677,
+      "p_value": 0.4440942813313643,
+      "ci95": [
+        -0.25887956435351234,
+        0.11348439731355878
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Energy and Nifty Metal (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Energy and Nifty Metal",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.4131266342147753,
+      "p_value": 3.2255817567673096e-05,
+      "ci95": [
+        0.2183400800730322,
+        0.6079131883565184
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.002322418864872463,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Energy and Nifty Pharma (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Energy and Nifty Pharma",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.5975372448468684,
+      "p_value": 6.253774131684381e-10,
+      "ci95": [
+        -0.7869244984500002,
+        -0.40814999124373663
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 6.128698649050693e-08,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Energy and Nifty Private Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Energy and Nifty Private Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.34280488703876366,
+      "p_value": 0.004194705035478847,
+      "ci95": [
+        0.10813729262213026,
+        0.5774724814553971
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.20134584170298467,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Energy and Nifty PSU Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Energy and Nifty PSU Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.5249203162473699,
+      "p_value": 2.0088790254083043e-05,
+      "ci95": [
+        0.28363310996822977,
+        0.76620752252651
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.0015267480593103113,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Energy and Nifty PSE (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Energy and Nifty PSE",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.02951881271033981,
+      "p_value": 0.5837850268958868,
+      "ci95": [
+        -0.0760836167082705,
+        0.13512124212895013
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Energy and Nifty Realty (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Energy and Nifty Realty",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.5802134487988511,
+      "p_value": 4.617694215105431e-08,
+      "ci95": [
+        0.3721426953390731,
+        0.7882842022586289
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 3.97121702499067e-06,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Energy and Nifty Services Sector (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Energy and Nifty Services Sector",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.08666169086549123,
+      "p_value": 0.3315181181006418,
+      "ci95": [
+        -0.08825406460814277,
+        0.2615774463391252
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Financial Services",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty FMCG and Nifty Financial Services (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty FMCG and Nifty Financial Services",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.7131466914677886,
+      "p_value": 1.2476735105938428e-15,
+      "ci95": [
+        0.5384214480185299,
+        0.8878719349170474
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.4473012722888577e-13,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty FMCG and Nifty Infrastructure (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty FMCG and Nifty Infrastructure",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.4440751158344003,
+      "p_value": 1.3566611169011593e-09,
+      "ci95": [
+        0.3004622743237648,
+        0.5876879573450358
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.2752614498870897e-07,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty FMCG and Nifty IT (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty FMCG and Nifty IT",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.154059890507826,
+      "p_value": 0.17469866263014433,
+      "ci95": [
+        -0.3765315408794552,
+        0.06841175986380313
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty FMCG and Nifty Media (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty FMCG and Nifty Media",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.2694846421320256,
+      "p_value": 0.007958551123574584,
+      "ci95": [
+        0.07045850100566103,
+        0.4685107832583902
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.3501762494372817,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty FMCG and Nifty Metal (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty FMCG and Nifty Metal",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.7553088598667773,
+      "p_value": 1.2002729678898974e-09,
+      "ci95": [
+        0.5118339092936375,
+        0.9987838104399172
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.1402593194954026e-07,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty FMCG and Nifty Pharma (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty FMCG and Nifty Pharma",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.2553550191948664,
+      "p_value": 0.006856052971620421,
+      "ci95": [
+        -0.4404629083481386,
+        -0.07024713004159425
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.30852238372291896,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty FMCG and Nifty Private Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty FMCG and Nifty Private Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.6849871126907662,
+      "p_value": 2.6525341054003937e-10,
+      "ci95": [
+        0.47248550064722705,
+        0.8974887247343053
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 2.7055847875084017e-08,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty FMCG and Nifty PSU Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty FMCG and Nifty PSU Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.8671025418993723,
+      "p_value": 4.356010630974557e-10,
+      "ci95": [
+        0.5947792138681165,
+        1.139425869930628
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 4.356010630974557e-08,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty FMCG and Nifty PSE (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty FMCG and Nifty PSE",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.3717010383623417,
+      "p_value": 0.0002779080465411929,
+      "ci95": [
+        0.17128641537730585,
+        0.5721156613473776
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.017508206932095153,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty FMCG and Nifty Realty (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty FMCG and Nifty Realty",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.922395674450852,
+      "p_value": 6.374857005975096e-18,
+      "ci95": [
+        0.7128034208077408,
+        1.131987928093963
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 7.522331267050613e-16,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty FMCG and Nifty Services Sector (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty FMCG and Nifty Services Sector",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.428843916517493,
+      "p_value": 4.950456494340174e-08,
+      "ci95": [
+        0.2747074449956939,
+        0.5829803880392921
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 4.207888020189148e-06,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Financial Services and Nifty Infrastructure (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Financial Services and Nifty Infrastructure",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.26907157563338807,
+      "p_value": 0.0002123517985081831,
+      "ci95": [
+        -0.4114560102746623,
+        -0.12668714099211387
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.013590515104523719,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Financial Services and Nifty IT (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Financial Services and Nifty IT",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.8672065819756142,
+      "p_value": 8.126174179127842e-14,
+      "ci95": [
+        -1.0947955401848108,
+        -0.6396176237664174
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 9.020053338831905e-12,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Financial Services and Nifty Media (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Financial Services and Nifty Media",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.443662049335763,
+      "p_value": 2.5123830978757498e-05,
+      "ci95": [
+        -0.6500281555282745,
+        -0.23729594314325142
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.0018591634924280548,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Financial Services and Nifty Metal (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Financial Services and Nifty Metal",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.04216216839898932,
+      "p_value": 0.7039281033181697,
+      "ci95": [
+        -0.1752885164518216,
+        0.25961285324980027
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Financial Services and Nifty Pharma (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Financial Services and Nifty Pharma",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.9685017106626543,
+      "p_value": 5.968707220435324e-15,
+      "ci95": [
+        -1.2117206686164623,
+        -0.7252827527088463
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 6.864013303500623e-13,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Financial Services and Nifty Private Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Financial Services and Nifty Private Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.02815957877702248,
+      "p_value": 0.5137774103755384,
+      "ci95": [
+        -0.1126841282325227,
+        0.05636497067847775
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Financial Services and Nifty PSU Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Financial Services and Nifty PSU Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.15395585043158388,
+      "p_value": 0.1942889789208856,
+      "ci95": [
+        -0.07851644095462573,
+        0.3864281418177935
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Financial Services and Nifty PSE (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Financial Services and Nifty PSE",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.3414456531054466,
+      "p_value": 0.0006654973601348745,
+      "ci95": [
+        -0.5380780600015399,
+        -0.14481324620935335
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.038598846887822724,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Financial Services and Nifty Realty (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Financial Services and Nifty Realty",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.20924898298306405,
+      "p_value": 0.01963125929432476,
+      "ci95": [
+        0.0334822023408034,
+        0.3850157636253247
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.7459878531843409,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Financial Services and Nifty Services Sector (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Financial Services and Nifty Services Sector",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.28430277495029493,
+      "p_value": 3.539304398672806e-18,
+      "ci95": [
+        -0.3484052160938378,
+        -0.22020033380675205
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 4.2117722344206393e-16,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Infrastructure and Nifty IT (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Infrastructure and Nifty IT",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.5981350063422252,
+      "p_value": 1.1620348365734203e-07,
+      "ci95": [
+        -0.8193543701122464,
+        -0.3769156425722039
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 9.76109262721673e-06,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Infrastructure and Nifty Media (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Infrastructure and Nifty Media",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.17459047370237496,
+      "p_value": 0.04653707546338738,
+      "ci95": [
+        -0.3465035115062587,
+        -0.0026774358984912594
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Infrastructure and Nifty Metal (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Infrastructure and Nifty Metal",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.31123374403237714,
+      "p_value": 0.0009229696521339037,
+      "ci95": [
+        0.12710917743077438,
+        0.4953583106339799
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.052609270171632506,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Infrastructure and Nifty Pharma (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Infrastructure and Nifty Pharma",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.6994301350292663,
+      "p_value": 7.716052406495068e-13,
+      "ci95": [
+        -0.890727570471586,
+        -0.5081326995869466
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 8.487657647144574e-11,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Infrastructure and Nifty Private Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Infrastructure and Nifty Private Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.24091199685636566,
+      "p_value": 0.008976216095446639,
+      "ci95": [
+        0.060205410940219084,
+        0.42161858277251224
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.3770010760087588,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Infrastructure and Nifty PSU Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Infrastructure and Nifty PSU Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.4230274260649725,
+      "p_value": 0.00016448338330637329,
+      "ci95": [
+        0.2029922085320282,
+        0.6430626435979168
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.010855903298220638,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Infrastructure and Nifty PSE (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Infrastructure and Nifty PSE",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.07237407747205843,
+      "p_value": 0.22593328269165747,
+      "ci95": [
+        -0.18951872009293944,
+        0.04477056514882258
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Infrastructure and Nifty Realty (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Infrastructure and Nifty Realty",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.4783205586164524,
+      "p_value": 1.7234783905900022e-08,
+      "ci95": [
+        0.3120305875971997,
+        0.6446105296357051
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.551130551531002e-06,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Infrastructure and Nifty Services Sector (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Infrastructure and Nifty Services Sector",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.015231199316907041,
+      "p_value": 0.8114218343158178,
+      "ci95": [
+        -0.14035098690330441,
+        0.10988858826949034
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty IT and Nifty Media (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty IT and Nifty Media",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.4235445326398514,
+      "p_value": 0.0009388297868579188,
+      "ci95": [
+        0.1726162355510697,
+        0.6744728297286331
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.052609270171632506,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty IT and Nifty Metal (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty IT and Nifty Metal",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.9093687503746033,
+      "p_value": 3.6147634169516245e-12,
+      "ci95": [
+        0.6529729515986162,
+        1.1657645491505904
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 3.867796856138238e-10,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty IT and Nifty Pharma (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty IT and Nifty Pharma",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.10129512868704073,
+      "p_value": 0.4209237360330388,
+      "ci95": [
+        -0.3479774674116392,
+        0.14538721003755772
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty IT and Nifty Private Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty IT and Nifty Private Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.8390470031985906,
+      "p_value": 9.69731109356628e-11,
+      "ci95": [
+        0.5849362852859257,
+        1.0931577211112555
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 9.98823042637327e-09,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty IT and Nifty PSU Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty IT and Nifty PSU Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 1.0211624324071977,
+      "p_value": 5.521541902673216e-10,
+      "ci95": [
+        0.698532235988942,
+        1.3437926288254536
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 5.466326483646484e-08,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty IT and Nifty PSE (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty IT and Nifty PSE",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.5257609288701667,
+      "p_value": 3.480502247762534e-05,
+      "ci95": [
+        0.27682499693831175,
+        0.7746968608020216
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.002471156595911399,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty IT and Nifty Realty (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty IT and Nifty Realty",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 1.0764555649586778,
+      "p_value": 1.0576407726580505e-15,
+      "ci95": [
+        0.8133857498847976,
+        1.339525380032558
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.237439704009919e-13,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty IT and Nifty Services Sector (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty IT and Nifty Services Sector",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.582903807025319,
+      "p_value": 2.21732022446268e-11,
+      "ci95": [
+        0.4121550942773103,
+        0.7536525197733277
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 2.328186235685814e-09,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Media and Nifty Metal (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Media and Nifty Metal",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.4858242177347522,
+      "p_value": 2.6190709636572735e-05,
+      "ci95": [
+        0.25934155909884105,
+        0.7123068763706634
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.0019119218034698096,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Media and Nifty Pharma (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Media and Nifty Pharma",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.5248396613268914,
+      "p_value": 1.4718283838041947e-06,
+      "ci95": [
+        -0.7384766066334917,
+        -0.31120271602029115
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.00011921809908813976,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Media and Nifty Private Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Media and Nifty Private Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.41550247055874084,
+      "p_value": 0.000500917463702603,
+      "ci95": [
+        0.18150597771462024,
+        0.6494989634028614
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.02955413035845358,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Media and Nifty PSU Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Media and Nifty PSU Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.5976178997673466,
+      "p_value": 2.9855215524160735e-06,
+      "ci95": [
+        0.3468995032490856,
+        0.8483362962856076
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.0002358562026408698,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Media and Nifty PSE (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Media and Nifty PSE",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.10221639623031659,
+      "p_value": 0.2852538567449704,
+      "ci95": [
+        -0.08526449522654181,
+        0.28969728768717495
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Media and Nifty Realty (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Media and Nifty Realty",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.6529110323188275,
+      "p_value": 1.9900539579345354e-09,
+      "ci95": [
+        0.43958150015267416,
+        0.8662405644849809
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.850750180879118e-07,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Media and Nifty Services Sector (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Media and Nifty Services Sector",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.15935927438546788,
+      "p_value": 0.09791125964275968,
+      "ci95": [
+        -0.029357415425698474,
+        0.3480759641966342
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Metal and Nifty Pharma (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Metal and Nifty Pharma",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -1.0106638790616436,
+      "p_value": 2.9460599190278615e-14,
+      "ci95": [
+        -1.2712810773160634,
+        -0.7500466808072237
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 3.3290477085014834e-12,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Metal and Nifty Private Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Metal and Nifty Private Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.07032174717601168,
+      "p_value": 0.5756003893905361,
+      "ci95": [
+        -0.31652129519673605,
+        0.17587780084471272
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Metal and Nifty PSU Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Metal and Nifty PSU Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.11179368203259471,
+      "p_value": 0.4101962778651208,
+      "ci95": [
+        -0.15426429874635872,
+        0.37785166281154814
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Metal and Nifty PSE (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Metal and Nifty PSE",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.3836078215044357,
+      "p_value": 1.3187531515982233e-05,
+      "ci95": [
+        -0.556172128502974,
+        -0.21104351450589728
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.0010154399267306318,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Metal and Nifty Realty (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Metal and Nifty Realty",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.16708681458407482,
+      "p_value": 0.1596424618137614,
+      "ci95": [
+        -0.0657866447382135,
+        0.39996027390636313
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Metal and Nifty Services Sector (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Metal and Nifty Services Sector",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.3264649433492844,
+      "p_value": 0.001487954348286622,
+      "ci95": [
+        -0.5278672024999802,
+        -0.12506268419858857
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.07886158045919096,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Pharma",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Pharma and Nifty Private Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Pharma and Nifty Private Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.9403421318856316,
+      "p_value": 7.850335808586068e-11,
+      "ci95": [
+        0.6569480353289687,
+        1.2237362284422946
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 8.16434924092951e-09,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Pharma",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Pharma and Nifty PSU Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Pharma and Nifty PSU Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 1.1224575610942387,
+      "p_value": 4.7516224980930784e-14,
+      "ci95": [
+        0.83062805731314,
+        1.4142870648753374
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 5.3218171978642476e-12,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Pharma",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Pharma and Nifty PSE (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Pharma and Nifty PSE",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.6270560575572077,
+      "p_value": 3.778323229156977e-09,
+      "ci95": [
+        0.41852413456782567,
+        0.8355879805465898
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 3.438274138532849e-07,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Pharma",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Pharma and Nifty Realty (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Pharma and Nifty Realty",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 1.1777506936457187,
+      "p_value": 5.869843837300828e-20,
+      "ci95": [
+        0.9253811432406388,
+        1.4301202440507987
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 7.043812604760994e-18,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Pharma",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Pharma and Nifty Services Sector (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Pharma and Nifty Services Sector",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.6841989357123592,
+      "p_value": 8.124464367077946e-10,
+      "ci95": [
+        0.46588222779547567,
+        0.9025156436292427
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 7.831794390224907e-08,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Private Bank",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Private Bank and Nifty PSU Bank (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Private Bank and Nifty PSU Bank",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.18211542920860652,
+      "p_value": 0.16013084970097513,
+      "ci95": [
+        -0.07200079445057933,
+        0.43623165286779236
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Private Bank",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Private Bank and Nifty PSE (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Private Bank and Nifty PSE",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.3132860743284241,
+      "p_value": 0.008700259884540856,
+      "ci95": [
+        -0.547325713737002,
+        -0.07924643491984612
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.3741111750352568,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Private Bank",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Private Bank and Nifty Realty (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Private Bank and Nifty Realty",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.23740856176008673,
+      "p_value": 0.01863274099583216,
+      "ci95": [
+        0.039638849635215245,
+        0.4351782738849582
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.7266768988374543,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Private Bank",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Private Bank and Nifty Services Sector (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Private Bank and Nifty Services Sector",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.25614319617327275,
+      "p_value": 5.716716521596789e-06,
+      "ci95": [
+        -0.36680557324592566,
+        -0.1454808191006198
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.00044590388868454955,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty PSU Bank",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty PSU Bank and Nifty PSE (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty PSU Bank and Nifty PSE",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.49540150353703016,
+      "p_value": 3.695973465620969e-05,
+      "ci95": [
+        -0.730747608211215,
+        -0.26005539886284534
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.002587181425934678,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty PSU Bank",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty PSU Bank and Nifty Realty (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty PSU Bank and Nifty Realty",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.05529313255148022,
+      "p_value": 0.6692670764564741,
+      "ci95": [
+        -0.19841517422743976,
+        0.3090014393304002
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty PSU Bank",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty PSU Bank and Nifty Services Sector (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty PSU Bank and Nifty Services Sector",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.438258625381879,
+      "p_value": 0.00029986237004447794,
+      "ci95": [
+        -0.6758441310437334,
+        -0.20067311972002455
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.018591466942757633,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty PSE",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty PSE and Nifty Realty (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty PSE and Nifty Realty",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.5506946360885107,
+      "p_value": 3.75104084145152e-07,
+      "ci95": [
+        0.33827500828081547,
+        0.7631142638962058
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 3.075853489990247e-05,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty PSE",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty PSE and Nifty Services Sector (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty PSE and Nifty Services Sector",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": 0.057142878155151476,
+      "p_value": 0.5297394403958093,
+      "ci95": [
+        -0.12108325762773747,
+        0.23536901393804044
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H1_usd_inr_slope_difference",
+      "index_a": "Nifty Realty",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "The usd_inr_change_pct slope is equal for Nifty Realty and Nifty Services Sector (coefficient in return difference = 0)",
+      "alternative_hypothesis": "The usd_inr_change_pct slopes differ between Nifty Realty and Nifty Services Sector",
+      "focus_predictor": "usd_inr_change_pct",
+      "slope_difference_estimate": -0.4935517579333591,
+      "p_value": 2.484177104144245e-08,
+      "ci95": [
+        -0.6670857199065019,
+        -0.32001779596021634
+      ],
+      "n": 2590,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 2.1860758516469357e-06,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    }
+  ],
+  "timing_caveat": "These are same-date daily observations. The supplied workbook does not establish exact FX observation timestamp relative to the Indian market close; treat results as contemporaneous associations, not predictive or causal effects."
+}

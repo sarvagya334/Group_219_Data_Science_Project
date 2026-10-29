@@ -1,0 +1,31 @@
+{
+  "project_title": "NSE Sector Index Market Impact Lab",
+  "analysis_universe_note": "Primary inference uses 16 long-history NSE sector/industry index series present throughout nearly the full snapshot archive. All index series in the archive are retained in the master long panel and encoded feature dataset; newer and non-sector indices are included in the data inventory but not mixed into the primary sector inference set.",
+  "primary_sector_indices": [
+    "Nifty Auto",
+    "Nifty Bank",
+    "Nifty Commodities",
+    "Nifty Energy",
+    "Nifty FMCG",
+    "Nifty Financial Services",
+    "Nifty Infrastructure",
+    "Nifty IT",
+    "Nifty Media",
+    "Nifty Metal",
+    "Nifty Pharma",
+    "Nifty Private Bank",
+    "Nifty PSU Bank",
+    "Nifty PSE",
+    "Nifty Realty",
+    "Nifty Services Sector"
+  ],
+  "selection_policy": {
+    "rule": "Pre-specified established sector/industry indices with at least 95% of the archive's unique snapshot dates.",
+    "threshold_fraction": 0.95,
+    "indices_not_in_primary_universe": "Remain in the all-index master panel and dataset-size audit; excluded from primary regressions because they are newer, non-sector (e.g. volatility, fixed income, factor/strategy), or have shorter coverage."
+  },
+  "notes": [
+    "The supplied archive has 180 distinct Index Name values, including broad-market, sector, thematic, factor/strategy, volatility and fixed-income indices; it is not exclusively a sector-index archive.",
+    "NIFTY 50, NIFTY Next 50, NIFTY 100 and NIFTY Midcap 100 are no longer the primary dependent variables."
+  ]
+}

@@ -1,0 +1,2702 @@
+{
+  "id": "H4",
+  "title": "RBI repo-rate effective-date event study",
+  "null": "Mean three-session abnormal return (CAR) around supplied repo effective dates equals zero; paired alternative: event CAR differs between indices.",
+  "alternative": "Mean CAR is nonzero or CAR distributions/sensitivity differ across index segments.",
+  "frequency": "event study",
+  "status": "completed",
+  "definition": "Event CAR is sum of daily returns in [t-1,t,t+1] minus 3 times the mean daily return in estimation window [t-120,t-21].",
+  "effective_dates_are_proxy_event_dates": true,
+  "by_index": {
+    "Nifty Auto": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.32377315733456824,
+      "sd_car_pct": 2.4119360069342797,
+      "se_pct": 0.4263740765728082,
+      "ci95_pct": [
+        -0.5458225050305259,
+        1.1933688196996624
+      ],
+      "t_statistic": 0.7593640775186301,
+      "degrees_freedom": 31,
+      "p_value": 0.4533708003134557,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 1.0,
+      "reject_h0_after_holm_across_indices": false
+    },
+    "Nifty Bank": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.2522105645507899,
+      "sd_car_pct": 1.6311236570607925,
+      "se_pct": 0.2883446497153717,
+      "ci95_pct": [
+        -0.335872225740173,
+        0.8402933548417528
+      ],
+      "t_statistic": 0.8746843917504616,
+      "degrees_freedom": 31,
+      "p_value": 0.38847217026886915,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 1.0,
+      "reject_h0_after_holm_across_indices": false
+    },
+    "Nifty Commodities": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.304070419338056,
+      "sd_car_pct": 1.905290642987379,
+      "se_pct": 0.33681098344691324,
+      "ci95_pct": [
+        -0.3828601102959216,
+        0.9910009489720336
+      ],
+      "t_statistic": 0.9027924690169206,
+      "degrees_freedom": 31,
+      "p_value": 0.3735978431318538,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 1.0,
+      "reject_h0_after_holm_across_indices": false
+    },
+    "Nifty Energy": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.03585110684261131,
+      "sd_car_pct": 1.8312656347895127,
+      "se_pct": 0.323725087128388,
+      "ci95_pct": [
+        -0.6243905612915849,
+        0.6960927749768074
+      ],
+      "t_statistic": 0.11074553152685665,
+      "degrees_freedom": 31,
+      "p_value": 0.9125320373837007,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 1.0,
+      "reject_h0_after_holm_across_indices": false
+    },
+    "Nifty FMCG": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.1066539579824883,
+      "sd_car_pct": 2.023588815356618,
+      "se_pct": 0.35772334341797923,
+      "ci95_pct": [
+        -0.6229276110083604,
+        0.836235526973337
+      ],
+      "t_statistic": 0.29814648650946235,
+      "degrees_freedom": 31,
+      "p_value": 0.7675805959434003,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 1.0,
+      "reject_h0_after_holm_across_indices": false
+    },
+    "Nifty Financial Services": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.1614514724216618,
+      "sd_car_pct": 1.7290238517123824,
+      "se_pct": 0.3056511225947773,
+      "ci95_pct": [
+        -0.46192810201654344,
+        0.784831046859867
+      ],
+      "t_statistic": 0.5282214279177019,
+      "degrees_freedom": 31,
+      "p_value": 0.6011069515122313,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 1.0,
+      "reject_h0_after_holm_across_indices": false
+    },
+    "Nifty Infrastructure": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.11832793752389191,
+      "sd_car_pct": 1.5223375399791523,
+      "se_pct": 0.26911379944352637,
+      "ci95_pct": [
+        -0.43053327505200634,
+        0.6671891500997902
+      ],
+      "t_statistic": 0.4396947974000979,
+      "degrees_freedom": 31,
+      "p_value": 0.6632083616033788,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 1.0,
+      "reject_h0_after_holm_across_indices": false
+    },
+    "Nifty IT": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.37649362334495545,
+      "sd_car_pct": 1.719363383377256,
+      "se_pct": 0.3039433769274758,
+      "ci95_pct": [
+        -0.24340298084176332,
+        0.9963902275316743
+      ],
+      "t_statistic": 1.2386965860249388,
+      "degrees_freedom": 31,
+      "p_value": 0.2247557128960515,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 1.0,
+      "reject_h0_after_holm_across_indices": false
+    },
+    "Nifty Media": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.4023006007531939,
+      "sd_car_pct": 2.9676343484555145,
+      "se_pct": 0.524608592968754,
+      "ci95_pct": [
+        -0.66764567870168,
+        1.472246880208068
+      ],
+      "t_statistic": 0.7668585801779941,
+      "degrees_freedom": 31,
+      "p_value": 0.44896667977989463,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 1.0,
+      "reject_h0_after_holm_across_indices": false
+    },
+    "Nifty Metal": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.5653445768041894,
+      "sd_car_pct": 2.7734162509584093,
+      "se_pct": 0.4902753595264157,
+      "ci95_pct": [
+        -0.4345786113867688,
+        1.5652677649951476
+      ],
+      "t_statistic": 1.153116439199162,
+      "degrees_freedom": 31,
+      "p_value": 0.25767658098653734,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 1.0,
+      "reject_h0_after_holm_across_indices": false
+    },
+    "Nifty Pharma": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.1968931070197552,
+      "sd_car_pct": 2.052550240008649,
+      "se_pct": 0.36284304835904785,
+      "ci95_pct": [
+        -0.543130169039985,
+        0.9369163830794955
+      ],
+      "t_statistic": 0.5426398766910412,
+      "degrees_freedom": 31,
+      "p_value": 0.5912580391786133,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 1.0,
+      "reject_h0_after_holm_across_indices": false
+    },
+    "Nifty Private Bank": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.3798377003494887,
+      "sd_car_pct": 1.7945526729048267,
+      "se_pct": 0.3172350910518618,
+      "ci95_pct": [
+        -0.26716753351957234,
+        1.0268429342185499
+      ],
+      "t_statistic": 1.1973382234924086,
+      "degrees_freedom": 31,
+      "p_value": 0.2402505247832987,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 1.0,
+      "reject_h0_after_holm_across_indices": false
+    },
+    "Nifty PSU Bank": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.064008549683755,
+      "sd_car_pct": 2.4803757996132054,
+      "se_pct": 0.43847263694937566,
+      "ci95_pct": [
+        -0.8302622892513872,
+        0.9582793886188973
+      ],
+      "t_statistic": 0.14598071644581365,
+      "degrees_freedom": 31,
+      "p_value": 0.8848817469468602,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 1.0,
+      "reject_h0_after_holm_across_indices": false
+    },
+    "Nifty PSE": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.6633255567469725,
+      "sd_car_pct": 1.819364198967355,
+      "se_pct": 0.32162119063446193,
+      "ci95_pct": [
+        0.007374813801964808,
+        1.31927629969198
+      ],
+      "t_statistic": 2.062443570457626,
+      "degrees_freedom": 31,
+      "p_value": 0.047630317798640624,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 0.76208508477825,
+      "reject_h0_after_holm_across_indices": false
+    },
+    "Nifty Realty": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.25547086149678916,
+      "sd_car_pct": 3.0353614551734553,
+      "se_pct": 0.5365811670763542,
+      "ci95_pct": [
+        -0.8388936438385128,
+        1.349835366832091
+      ],
+      "t_statistic": 0.4761085128812138,
+      "degrees_freedom": 31,
+      "p_value": 0.6373355451553094,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 1.0,
+      "reject_h0_after_holm_across_indices": false
+    },
+    "Nifty Services Sector": {
+      "status": "tested",
+      "n": 32,
+      "mean_car_pct": 0.1796526069666211,
+      "sd_car_pct": 1.4154222829430512,
+      "se_pct": 0.2502136736278939,
+      "ci95_pct": [
+        -0.3306615448697108,
+        0.689966758802953
+      ],
+      "t_statistic": 0.7179967599764034,
+      "degrees_freedom": 31,
+      "p_value": 0.4781358042059791,
+      "method": "Two-sided one-sample t-test of event CAR mean = 0; effective dates are proxy event dates",
+      "events_by_decision": {
+        "cut": 13,
+        "hold": 11,
+        "hike": 8
+      },
+      "mean_repo_change_pp": -0.03906249999999999,
+      "mean_mapping_lag_days": 0.0,
+      "p_value_holm_across_indices": 1.0,
+      "reject_h0_after_holm_across_indices": false
+    }
+  },
+  "pairwise_tests": [
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.07156259278377841,
+      "ci95": [
+        -0.7627472519163051,
+        0.9058724374838619
+      ],
+      "p_value": 0.8622655941518469,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Commodities",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.0197027379965124,
+      "ci95": [
+        -0.5325473684834083,
+        0.5719528444764332
+      ],
+      "p_value": 0.9424612788930992,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Energy",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.2879220504919571,
+      "ci95": [
+        -0.3733716130333819,
+        0.9492157140172961
+      ],
+      "p_value": 0.38138546065452145,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty FMCG",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.21711919935207985,
+      "ci95": [
+        -0.7391708386779072,
+        1.1734092373820668
+      ],
+      "p_value": 0.6465574134767058,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Financial Services",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.1623216849129065,
+      "ci95": [
+        -0.5815569624295291,
+        0.9062003322553422
+      ],
+      "p_value": 0.6593815234639067,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.2054452198106764,
+      "ci95": [
+        -0.4118502872565859,
+        0.8227407268779388
+      ],
+      "p_value": 0.502313248587863,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.0527204660103871,
+      "ci95": [
+        -0.9366069122796257,
+        0.8311659802588516
+      ],
+      "p_value": 0.9039619775554876,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.07852744341862553,
+      "ci95": [
+        -0.9560957154904743,
+        0.7990408286532233
+      ],
+      "p_value": 0.8563772284764325,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.24157141946962107,
+      "ci95": [
+        -0.9826476438508389,
+        0.4995048049115968
+      ],
+      "p_value": 0.5110764524333279,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.12688005031481303,
+      "ci95": [
+        -0.9005256216988515,
+        1.1542857223284777
+      ],
+      "p_value": 0.8028032366319526,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.05606454301492041,
+      "ci95": [
+        -0.9670512606483819,
+        0.8549221746185411
+      ],
+      "p_value": 0.9009246933042266,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.2597646076508132,
+      "ci95": [
+        -0.6676213769004358,
+        1.1871505922020622
+      ],
+      "p_value": 0.5719313927803615,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.3395523994124042,
+      "ci95": [
+        -1.154053544544021,
+        0.47494874571921253
+      ],
+      "p_value": 0.40171088172001673,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.06830229583777925,
+      "ci95": [
+        -0.7095000679523698,
+        0.8461046596279282
+      ],
+      "p_value": 0.8590255943350625,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.14412055036794713,
+      "ci95": [
+        -0.5966515217787436,
+        0.8848926225146378
+      ],
+      "p_value": 0.6942360660942489,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Commodities",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.05185985478726604,
+      "ci95": [
+        -0.6604881632140324,
+        0.5567684536395002
+      ],
+      "p_value": 0.8631663638613825,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Energy",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.21635945770817866,
+      "ci95": [
+        -0.4648154400304567,
+        0.897534355446814
+      ],
+      "p_value": 0.5218807942184301,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty FMCG",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.14555660656830155,
+      "ci95": [
+        -0.5173588492395587,
+        0.8084720623761619
+      ],
+      "p_value": 0.657399400455995,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Financial Services",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.09075909212912806,
+      "ci95": [
+        -0.21078865380867648,
+        0.39230683806693256
+      ],
+      "p_value": 0.5437946434406874,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.13388262702689796,
+      "ci95": [
+        -0.32454887665309645,
+        0.5923141307068924
+      ],
+      "p_value": 0.5557466440346577,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.12428305879416554,
+      "ci95": [
+        -0.6937903026587481,
+        0.44522418507041694
+      ],
+      "p_value": 0.6593535183830909,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.15009003620240408,
+      "ci95": [
+        -1.2185600285539364,
+        0.9183799561491284
+      ],
+      "p_value": 0.7764055563854647,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.31313401225339954,
+      "ci95": [
+        -1.1951131805649768,
+        0.5688451560581779
+      ],
+      "p_value": 0.4744339539210672,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.055317457531034606,
+      "ci95": [
+        -0.541631961413287,
+        0.6522668764753561
+      ],
+      "p_value": 0.8513283492117598,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.1276271357986988,
+      "ci95": [
+        -0.3033500857542191,
+        0.048095814156821515
+      ],
+      "p_value": 0.14862219845057026,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.18820201486703483,
+      "ci95": [
+        -0.5292215071428964,
+        0.905625536876966
+      ],
+      "p_value": 0.5964489272047618,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.41111499219618264,
+      "ci95": [
+        -1.000051360950002,
+        0.17782137655763675
+      ],
+      "p_value": 0.16451844850836184,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.0032602969459991638,
+      "ci95": [
+        -0.9086040675741738,
+        0.9020834736821755
+      ],
+      "p_value": 0.9941869444223934,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.07255795758416876,
+      "ci95": [
+        -0.16051378453532877,
+        0.3056296997036663
+      ],
+      "p_value": 0.5301364500665239,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Energy",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.2682193124954446,
+      "ci95": [
+        -0.18333485524944254,
+        0.7197734802403317
+      ],
+      "p_value": 0.23487574508068484,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty FMCG",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.1974164613555676,
+      "ci95": [
+        -0.48166868533422835,
+        0.8765016080453635
+      ],
+      "p_value": 0.5575451632743392,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Financial Services",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.14261894691639415,
+      "ci95": [
+        -0.4655876655106565,
+        0.7508255593434447
+      ],
+      "p_value": 0.6358296902563605,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.18574248181416397,
+      "ci95": [
+        -0.1680441268725596,
+        0.5395290905008876
+      ],
+      "p_value": 0.29253885153458536,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.0724232040068995,
+      "ci95": [
+        -0.7962354367267301,
+        0.6513890287129311
+      ],
+      "p_value": 0.8396329020270287,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.09823018141513798,
+      "ci95": [
+        -1.0005014082677004,
+        0.8040410454374245
+      ],
+      "p_value": 0.8257378083942903,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.26127415746613347,
+      "ci95": [
+        -0.7777731836400725,
+        0.2552248687078056
+      ],
+      "p_value": 0.31019491585260195,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.10717731231830074,
+      "ci95": [
+        -0.5684680151174931,
+        0.7828226397540946
+      ],
+      "p_value": 0.7484686103367207,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.07576728101143271,
+      "ci95": [
+        -0.7477294613296277,
+        0.5961948993067623
+      ],
+      "p_value": 0.8196289978199714,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.24006186965430087,
+      "ci95": [
+        -0.5830258396531051,
+        1.0631495789617067
+      ],
+      "p_value": 0.5562646147100103,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.35925513740891657,
+      "ci95": [
+        -0.8292143930820104,
+        0.11070411826417725
+      ],
+      "p_value": 0.12912848262242305,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.04859955784126685,
+      "ci95": [
+        -0.6830934935918838,
+        0.7802926092744176
+      ],
+      "p_value": 0.8931193495089251,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.12441781237143479,
+      "ci95": [
+        -0.4187436690079649,
+        0.6675792937508345
+      ],
+      "p_value": 0.6436414240012608,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty FMCG",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.07080285113987708,
+      "ci95": [
+        -0.8328272341948949,
+        0.6912215319151408
+      ],
+      "p_value": 0.8509365445920377,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Financial Services",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.12560036557905047,
+      "ci95": [
+        -0.7980381690180758,
+        0.5468374378599747
+      ],
+      "p_value": 0.705840337454174,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.08247683068128064,
+      "ci95": [
+        -0.47031490112725055,
+        0.30536123976468926
+      ],
+      "p_value": 0.667496227762949,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.34064251650234423,
+      "ci95": [
+        -1.1187508257597945,
+        0.437465792755106
+      ],
+      "p_value": 0.37880902582484477,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.3664494939105826,
+      "ci95": [
+        -1.2392812353953273,
+        0.506382247574162
+      ],
+      "p_value": 0.3984197151357646,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.5294934699615781,
+      "ci95": [
+        -1.3675993635725172,
+        0.3086124236493609
+      ],
+      "p_value": 0.2071019755894816,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.16104200017714396,
+      "ci95": [
+        -0.9157874672279925,
+        0.5937034668737046
+      ],
+      "p_value": 0.6664493264698108,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.34398659350687744,
+      "ci95": [
+        -1.0903005207114989,
+        0.402327333697744
+      ],
+      "p_value": 0.35446448547224035,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.028157442841143777,
+      "ci95": [
+        -0.8248572796688681,
+        0.7685423939865806
+      ],
+      "p_value": 0.9429999425697094,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.6274744499043612,
+      "ci95": [
+        -1.0088962731559414,
+        -0.24605262665278088
+      ],
+      "p_value": 0.002107062231447515,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 0.2528474677737018,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.2196197546541777,
+      "ci95": [
+        -0.9392326478615591,
+        0.4999931385532037
+      ],
+      "p_value": 0.5382030774907082,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.14380150012400983,
+      "ci95": [
+        -0.7373099925315997,
+        0.44970699228358
+      ],
+      "p_value": 0.6246804022992369,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Financial Services",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.05479751443917358,
+      "ci95": [
+        -0.868744208760944,
+        0.7591491798825969
+      ],
+      "p_value": 0.8916763735365872,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.011673979541403562,
+      "ci95": [
+        -0.6584582820800778,
+        0.6351103229972707
+      ],
+      "p_value": 0.970871167096338,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.26983966536246706,
+      "ci95": [
+        -1.1216120534516276,
+        0.5819327227266935
+      ],
+      "p_value": 0.5229605867354109,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.2956466427707056,
+      "ci95": [
+        -1.3335309194960474,
+        0.7422376339546362
+      ],
+      "p_value": 0.565463738030381,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.4586906188217011,
+      "ci95": [
+        -1.4313311756773648,
+        0.5139499380339625
+      ],
+      "p_value": 0.3435825954630205,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.09023914903726685,
+      "ci95": [
+        -0.8540907469467638,
+        0.6736124488722302
+      ],
+      "p_value": 0.811186519097996,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.2731837423670003,
+      "ci95": [
+        -0.949366277232147,
+        0.40299879249814624
+      ],
+      "p_value": 0.41624480427800115,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.04264540829873334,
+      "ci95": [
+        -0.904507017142164,
+        0.9897978337396306
+      ],
+      "p_value": 0.927424902497794,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.5566715987644841,
+      "ci95": [
+        -1.2147303046570546,
+        0.1013871071280864
+      ],
+      "p_value": 0.09443363188441802,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.14881690351430063,
+      "ci95": [
+        -1.1909782282093166,
+        0.8933444211807154
+      ],
+      "p_value": 0.7728112596177119,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.07299864898413275,
+      "ci95": [
+        -0.7864101842947562,
+        0.6404128863264906
+      ],
+      "p_value": 0.8360555905776605,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.04312353489776993,
+      "ci95": [
+        -0.4191656911199257,
+        0.5054127609154655
+      ],
+      "p_value": 0.8503527685412918,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.21504215092329365,
+      "ci95": [
+        -0.8332161105758682,
+        0.40313180872928084
+      ],
+      "p_value": 0.48332990338741144,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.24084912833153216,
+      "ci95": [
+        -1.2758337273630656,
+        0.7941354707000012
+      ],
+      "p_value": 0.6383907888146343,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.40389310438252757,
+      "ci95": [
+        -1.2332644179880212,
+        0.4254782092229661
+      ],
+      "p_value": 0.32829418132648946,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.03544163459809338,
+      "ci95": [
+        -0.7339427717418641,
+        0.6630595025456774
+      ],
+      "p_value": 0.9182454332422048,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.21838622792782686,
+      "ci95": [
+        -0.6272565888557817,
+        0.19048413300012806
+      ],
+      "p_value": 0.2843970724755511,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.09744292273790678,
+      "ci95": [
+        -0.6632547531146104,
+        0.8581405985904239
+      ],
+      "p_value": 0.7956237034283127,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.5018740843253107,
+      "ci95": [
+        -1.1781390435767456,
+        0.17439087492612437
+      ],
+      "p_value": 0.14026294727462074,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.0940193890751273,
+      "ci95": [
+        -0.9055486348076618,
+        0.7175098566574072
+      ],
+      "p_value": 0.8147642715429202,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.018201134544959308,
+      "ci95": [
+        -0.22399620730986738,
+        0.18759393821994877
+      ],
+      "p_value": 0.8580277519163017,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.2581656858210635,
+      "ci95": [
+        -0.9266674121970545,
+        0.41033604055492756
+      ],
+      "p_value": 0.43689400140617624,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.28397266322930204,
+      "ci95": [
+        -1.1933487200366253,
+        0.6254033935780212
+      ],
+      "p_value": 0.5288766153369551,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.4470166392802975,
+      "ci95": [
+        -1.1850883749454835,
+        0.2910550963848884
+      ],
+      "p_value": 0.2260209922122561,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.07856516949586334,
+      "ci95": [
+        -0.7117269039943211,
+        0.5545965650025945
+      ],
+      "p_value": 0.8018842637813588,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.2615097628255968,
+      "ci95": [
+        -0.79138135894302,
+        0.2683618332918264
+      ],
+      "p_value": 0.32193426991489943,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.05431938784013682,
+      "ci95": [
+        -0.6992942917996714,
+        0.807933067479945
+      ],
+      "p_value": 0.8840798285076198,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.5449976192230805,
+      "ci95": [
+        -0.9425894404466164,
+        -0.14740579799954473
+      ],
+      "p_value": 0.008811865882038437,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.13714292397289718,
+      "ci95": [
+        -0.8804643218147866,
+        0.6061784738689923
+      ],
+      "p_value": 0.7092640476213313,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.06132466944272921,
+      "ci95": [
+        -0.4523296219603583,
+        0.32968028307489994
+      ],
+      "p_value": 0.7512094787794704,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.025806977408238466,
+      "ci95": [
+        -1.2644654704626068,
+        1.2128515156461297
+      ],
+      "p_value": 0.9663786202707307,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.18885095345923397,
+      "ci95": [
+        -1.1513858165779838,
+        0.773683909659516
+      ],
+      "p_value": 0.6917858729531174,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.17960051632520016,
+      "ci95": [
+        -0.5106160071910847,
+        0.869817039841485
+      ],
+      "p_value": 0.5994086108545268,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.0033440770045332496,
+      "ci95": [
+        -0.6128872887929455,
+        0.6061991347838791
+      ],
+      "p_value": 0.9911442105546472,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.3124850736612004,
+      "ci95": [
+        -0.7228004481349866,
+        1.3477705954573873
+      ],
+      "p_value": 0.5426548231328053,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.28683193340201707,
+      "ci95": [
+        -1.017458226887777,
+        0.44379436008374284
+      ],
+      "p_value": 0.4294111551904655,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.12102276184816636,
+      "ci95": [
+        -0.88962754533814,
+        1.1316730690344727
+      ],
+      "p_value": 0.8086646659614539,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.1968410163783343,
+      "ci95": [
+        -0.2631615946165292,
+        0.6568436273731978
+      ],
+      "p_value": 0.38951817042795744,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.16304397605099546,
+      "ci95": [
+        -1.3570787548508525,
+        1.0309908027488617
+      ],
+      "p_value": 0.7824831919276865,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.20540749373343864,
+      "ci95": [
+        -0.8083135286751144,
+        1.2191285161419918
+      ],
+      "p_value": 0.6822602202692954,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.022462900403705285,
+      "ci95": [
+        -1.099264102058387,
+        1.1441899028657978
+      ],
+      "p_value": 0.9676839027046222,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.3382920510694388,
+      "ci95": [
+        -0.7128887046323628,
+        1.3894728067712405
+      ],
+      "p_value": 0.5164364955921564,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.2610249559937786,
+      "ci95": [
+        -1.2260527392839085,
+        0.7040028272963511
+      ],
+      "p_value": 0.5851387438094995,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.1468297392564049,
+      "ci95": [
+        -0.7876858530860196,
+        1.0813453315988293
+      ],
+      "p_value": 0.7507808176519548,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.2226479937865728,
+      "ci95": [
+        -0.8131224518288069,
+        1.2584184394019526
+      ],
+      "p_value": 0.6641282221812289,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.3684514697844341,
+      "ci95": [
+        -0.6508686269958464,
+        1.3877715665647146
+      ],
+      "p_value": 0.4665329958244744,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.1855068764547008,
+      "ci95": [
+        -0.7459095030551449,
+        1.1169232559645466
+      ],
+      "p_value": 0.6873842619438806,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.5013360271204343,
+      "ci95": [
+        -0.546510707082168,
+        1.5491827613230367
+      ],
+      "p_value": 0.33672063295008653,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.09798097994278315,
+      "ci95": [
+        -0.9491933079497799,
+        0.7532313480642137
+      ],
+      "p_value": 0.8159361337776438,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.3098737153074004,
+      "ci95": [
+        -0.6086721756843594,
+        1.2284196062991601
+      ],
+      "p_value": 0.4965473651511423,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.3856919698375683,
+      "ci95": [
+        -0.43460808287064207,
+        1.2059920225457788
+      ],
+      "p_value": 0.34500554359126395,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Pharma",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.18294459332973342,
+      "ci95": [
+        -0.7969346006109302,
+        0.43104541395146334
+      ],
+      "p_value": 0.5478168549751375,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Pharma",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.13288455733600024,
+      "ci95": [
+        -0.8270779355470337,
+        1.0928470502190342
+      ],
+      "p_value": 0.7795720013377229,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Pharma",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.46643244972721726,
+      "ci95": [
+        -1.0841834233084093,
+        0.15131852385397476
+      ],
+      "p_value": 0.13372322419819327,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Pharma",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.05857775447703381,
+      "ci95": [
+        -0.9995171099924459,
+        0.8823616010383782
+      ],
+      "p_value": 0.8997849499840264,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Pharma",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.017240500053134128,
+      "ci95": [
+        -0.5856736816364362,
+        0.6201546817427045
+      ],
+      "p_value": 0.9538676945835134,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Private Bank",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.3158291506657336,
+      "ci95": [
+        -0.5191422871926746,
+        1.1508005885241417
+      ],
+      "p_value": 0.4462818110169009,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Private Bank",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.2834878563974838,
+      "ci95": [
+        -0.8950876227977813,
+        0.32811191000281376
+      ],
+      "p_value": 0.3517896719802778,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Private Bank",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.12436683885269957,
+      "ci95": [
+        -0.8265432464957424,
+        1.0752769242011415
+      ],
+      "p_value": 0.791434081995475,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Private Bank",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.20018509338286755,
+      "ci95": [
+        -0.13129346002609393,
+        0.531663646791829
+      ],
+      "p_value": 0.2273252093133027,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty PSU Bank",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.5993170070632174,
+      "ci95": [
+        -1.477214914668655,
+        0.27858090054222007
+      ],
+      "p_value": 0.17373335256863623,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty PSU Bank",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.191462311813034,
+      "ci95": [
+        -1.1977831680366762,
+        0.8148585444106081
+      ],
+      "p_value": 0.7006404199049612,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty PSU Bank",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": -0.11564405728286609,
+      "ci95": [
+        -0.8992086541743677,
+        0.6679205396086355
+      ],
+      "p_value": 0.7654196902392989,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty PSE",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.4078546952501834,
+      "ci95": [
+        -0.39130656049871243,
+        1.2070159509990792
+      ],
+      "p_value": 0.3059848731096161,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty PSE",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.48367294978035136,
+      "ci95": [
+        -0.07396100929772176,
+        1.0413069088584246
+      ],
+      "p_value": 0.08673200439163081,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H4_repo_event_car_pairwise_difference",
+      "index_a": "Nifty Realty",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Mean paired difference in event-window CAR equals zero",
+      "alternative_hypothesis": "Mean paired difference in CAR is nonzero",
+      "mean_car_difference_pct": 0.075818254530168,
+      "ci95": [
+        -0.7627273939247005,
+        0.9143639029850364
+      ],
+      "p_value": 0.8548964897370873,
+      "n_matched_events": 32,
+      "status": "tested",
+      "method": "Paired two-sided t-test across matched repo effective dates; interpret as exploratory because event timestamps are not verified announcements.",
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    }
+  ],
+  "eligible_events_per_index": {
+    "Nifty Auto": 32,
+    "Nifty Bank": 32,
+    "Nifty Commodities": 32,
+    "Nifty Energy": 32,
+    "Nifty FMCG": 32,
+    "Nifty Financial Services": 32,
+    "Nifty Infrastructure": 32,
+    "Nifty IT": 32,
+    "Nifty Media": 32,
+    "Nifty Metal": 32,
+    "Nifty Pharma": 32,
+    "Nifty Private Bank": 32,
+    "Nifty PSU Bank": 32,
+    "Nifty PSE": 32,
+    "Nifty Realty": 32,
+    "Nifty Services Sector": 32
+  },
+  "caveats": [
+    "Effective dates are not verified public announcement timestamps.",
+    "The file may not be a complete official MPC decision calendar; holds and changes reflect supplied workbook only.",
+    "Event CAR uses a simple mean-return benchmark, not a market model; treat results as exploratory.",
+    "Overlapping event windows or macro shocks can induce dependence; paired comparisons are not causal."
+  ]
+}

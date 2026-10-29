@@ -1,0 +1,15 @@
+{
+  "generated_by": "scripts/clean_and_validate.py",
+  "instances_definition": "one index-observation row per snapshot date and Index Name with a valid positive close",
+  "instances": 256577,
+  "numeric_feature_count": 19,
+  "one_hot_index_name_columns": 180,
+  "one_hot_index_group_columns": 6,
+  "encoded_attribute_count": 205,
+  "instances_times_encoded_attributes": 52598285,
+  "required_cells": 3000000,
+  "requirement_met": true,
+  "encoded_matrix_path": "data/processed/sector_index_features_encoded.npz",
+  "feature_definition_path": "data/processed/encoded_feature_columns.json",
+  "imputation": "Median by index name, then global median fallback, then 0 only where an entire feature is missing. Counts are in encoded_feature_columns.json."
+}

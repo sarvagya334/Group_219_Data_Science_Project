@@ -1,0 +1,3269 @@
+{
+  "id": "H7",
+  "title": "Prior US-session S&P 500 returns and Indian index returns",
+  "null": "Prior S&P 500 return coefficient equals zero per index; paired alternative: sensitivity differs across indices.",
+  "alternative": "Prior US market return is associated with index return or sensitivity differs across index segments.",
+  "frequency": "daily",
+  "by_index_controlled_for_own_lag": {
+    "Nifty Auto": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.04724399034546123,
+      "coefficients": {
+        "const": 0.034034023261824524,
+        "sp500_return_pct": 0.27425506585129406,
+        "Nifty Auto_lag1_pct": -0.024515409460073932
+      },
+      "standard_errors_hac": {
+        "const": 0.027752327744413646,
+        "sp500_return_pct": 0.058835124788771634,
+        "Nifty Auto_lag1_pct": 0.02832310599446192
+      },
+      "p_values": {
+        "const": 0.2200675876999102,
+        "sp500_return_pct": 3.1403932377568764e-06,
+        "Nifty Auto_lag1_pct": 0.38673030145866816
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.020359539604377933,
+          0.08842758612802698
+        ],
+        "sp500_return_pct": [
+          0.15894034023938192,
+          0.3895697914632062
+        ],
+        "Nifty Auto_lag1_pct": [
+          -0.08002767713952981,
+          0.030996858219381945
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.27425506585129406,
+      "focus_p_value": 3.1403932377568764e-06,
+      "focus_ci95": [
+        0.15894034023938192,
+        0.3895697914632062
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 3.4544325615325644e-05,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Bank": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.045407436798732936,
+      "coefficients": {
+        "const": 0.03729731379177482,
+        "sp500_return_pct": 0.26477275858988736,
+        "Nifty Bank_lag1_pct": -0.0301791823017057
+      },
+      "standard_errors_hac": {
+        "const": 0.026775012256885833,
+        "sp500_return_pct": 0.0685630026798406,
+        "Nifty Bank_lag1_pct": 0.03169636416567634
+      },
+      "p_values": {
+        "const": 0.1636229336173074,
+        "sp500_return_pct": 0.00011258053703632594,
+        "Nifty Bank_lag1_pct": 0.34102908691117173
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.015180745917339922,
+          0.08977537350088956
+        ],
+        "sp500_return_pct": [
+          0.13039174266547657,
+          0.3991537745142981
+        ],
+        "Nifty Bank_lag1_pct": [
+          -0.09230291450729727,
+          0.03194454990388588
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.26477275858988736,
+      "focus_p_value": 0.00011258053703632594,
+      "focus_ci95": [
+        0.13039174266547657,
+        0.3991537745142981
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 0.0005629026851816297,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Commodities": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.0564843669086299,
+      "coefficients": {
+        "const": 0.040447327938177,
+        "sp500_return_pct": 0.27044941629614677,
+        "Nifty Commodities_lag1_pct": -0.07711021109622498
+      },
+      "standard_errors_hac": {
+        "const": 0.025152451363430785,
+        "sp500_return_pct": 0.05462018279604284,
+        "Nifty Commodities_lag1_pct": 0.04298501693376129
+      },
+      "p_values": {
+        "const": 0.10781614440095356,
+        "sp500_return_pct": 7.366038317740226e-07,
+        "Nifty Commodities_lag1_pct": 0.07283139985446771
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.008850570857042717,
+          0.08974522673339672
+        ],
+        "sp500_return_pct": [
+          0.16339582518690854,
+          0.377503007405385
+        ],
+        "Nifty Commodities_lag1_pct": [
+          -0.16135929616124145,
+          0.007138873968791495
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.27044941629614677,
+      "focus_p_value": 7.366038317740226e-07,
+      "focus_ci95": [
+        0.16339582518690854,
+        0.377503007405385
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 1.0312453644836316e-05,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Energy": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.035777986591667976,
+      "coefficients": {
+        "const": 0.05067002272968229,
+        "sp500_return_pct": 0.2249890126895787,
+        "Nifty Energy_lag1_pct": -0.0416077872537544
+      },
+      "standard_errors_hac": {
+        "const": 0.02669659685159247,
+        "sp500_return_pct": 0.05528826887355348,
+        "Nifty Energy_lag1_pct": 0.04590879000960881
+      },
+      "p_values": {
+        "const": 0.05769666475365734,
+        "sp500_return_pct": 4.7138274973151706e-05,
+        "Nifty Energy_lag1_pct": 0.36476958357315026
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.001654345609224353,
+          0.10299439106858893
+        ],
+        "sp500_return_pct": [
+          0.11662599692984696,
+          0.33335202844931044
+        ],
+        "Nifty Energy_lag1_pct": [
+          -0.1315873622463999,
+          0.048371787738891114
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.2249890126895787,
+      "focus_p_value": 4.7138274973151706e-05,
+      "focus_ci95": [
+        0.11662599692984696,
+        0.33335202844931044
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 0.0004242444747583654,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty FMCG": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.023207686535801186,
+      "coefficients": {
+        "const": 0.028550840644857318,
+        "sp500_return_pct": 0.13518309967230335,
+        "Nifty FMCG_lag1_pct": -0.05164307026886956
+      },
+      "standard_errors_hac": {
+        "const": 0.0205228967320493,
+        "sp500_return_pct": 0.042955450054610156,
+        "Nifty FMCG_lag1_pct": 0.05133026860418915
+      },
+      "p_values": {
+        "const": 0.1641738466803393,
+        "sp500_return_pct": 0.001649247789768426,
+        "Nifty FMCG_lag1_pct": 0.31437040142358974
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.011673297808394077,
+          0.06877497909810872
+        ],
+        "sp500_return_pct": [
+          0.050991964625558356,
+          0.21937423471904835
+        ],
+        "Nifty FMCG_lag1_pct": [
+          -0.15224854804984736,
+          0.04896240751210824
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.13518309967230335,
+      "focus_p_value": 0.001649247789768426,
+      "focus_ci95": [
+        0.050991964625558356,
+        0.21937423471904835
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 0.003298495579536852,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Financial Services": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.05381766771843044,
+      "coefficients": {
+        "const": 0.04047273878286613,
+        "sp500_return_pct": 0.2789796409473861,
+        "Nifty Financial Services_lag1_pct": -0.04500506127739916
+      },
+      "standard_errors_hac": {
+        "const": 0.025282986936035885,
+        "sp500_return_pct": 0.06935656024112952,
+        "Nifty Financial Services_lag1_pct": 0.03159547146184182
+      },
+      "p_values": {
+        "const": 0.10942356079862851,
+        "sp500_return_pct": 5.76087748106126e-05,
+        "Nifty Financial Services_lag1_pct": 0.15432639478746044
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.0090810050333609,
+          0.09002648259909315
+        ],
+        "sp500_return_pct": [
+          0.1430432807831896,
+          0.41491600111158256
+        ],
+        "Nifty Financial Services_lag1_pct": [
+          -0.10693104741717221,
+          0.016920924862373905
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.2789796409473861,
+      "focus_p_value": 5.76087748106126e-05,
+      "focus_ci95": [
+        0.1430432807831896,
+        0.41491600111158256
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 0.0004608701984849008,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Infrastructure": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.047302403078506416,
+      "coefficients": {
+        "const": 0.0431339081476451,
+        "sp500_return_pct": 0.2243548727245307,
+        "Nifty Infrastructure_lag1_pct": -0.08072194585846547
+      },
+      "standard_errors_hac": {
+        "const": 0.022802707851770965,
+        "sp500_return_pct": 0.05659603040023,
+        "Nifty Infrastructure_lag1_pct": 0.0429111910249154
+      },
+      "p_values": {
+        "const": 0.05854250674628925,
+        "sp500_return_pct": 7.365946232047854e-05,
+        "Nifty Infrastructure_lag1_pct": 0.05995291511162036
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.0015585779918146914,
+          0.0878263942871049
+        ],
+        "sp500_return_pct": [
+          0.11342869147214588,
+          0.33528105397691554
+        ],
+        "Nifty Infrastructure_lag1_pct": [
+          -0.16482633480101805,
+          0.003382443084087125
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.2243548727245307,
+      "focus_p_value": 7.365946232047854e-05,
+      "focus_ci95": [
+        0.11342869147214588,
+        0.33528105397691554
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 0.0004608701984849008,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty IT": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.08032950540559658,
+      "coefficients": {
+        "const": 0.03285425350448939,
+        "sp500_return_pct": 0.3540053522402258,
+        "Nifty IT_lag1_pct": -0.053203346714193404
+      },
+      "standard_errors_hac": {
+        "const": 0.026388228919030244,
+        "sp500_return_pct": 0.05337365521131388,
+        "Nifty IT_lag1_pct": 0.03735391045277238
+      },
+      "p_values": {
+        "const": 0.2131190952415578,
+        "sp500_return_pct": 3.298562889218146e-11,
+        "Nifty IT_lag1_pct": 0.1543583147208466
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.018865724792608216,
+          0.08457423180158699
+        ],
+        "sp500_return_pct": [
+          0.24939491030279198,
+          0.4586157941776596
+        ],
+        "Nifty IT_lag1_pct": [
+          -0.12641566588336153,
+          0.020008972454974717
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.3540053522402258,
+      "focus_p_value": 3.298562889218146e-11,
+      "focus_ci95": [
+        0.24939491030279198,
+        0.4586157941776596
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 4.947844333827218e-10,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Media": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.03193816496587232,
+      "coefficients": {
+        "const": -0.026602717441015247,
+        "sp500_return_pct": 0.2821600480065991,
+        "Nifty Media_lag1_pct": -0.013918538598322002
+      },
+      "standard_errors_hac": {
+        "const": 0.03553818203761518,
+        "sp500_return_pct": 0.03635944482911993,
+        "Nifty Media_lag1_pct": 0.027280326010918773
+      },
+      "p_values": {
+        "const": 0.4541181073675309,
+        "sp500_return_pct": 8.473150872744057e-15,
+        "Nifty Media_lag1_pct": 0.609908366640894
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.09625627431076929,
+          0.04305083942873879
+        ],
+        "sp500_return_pct": [
+          0.21089684564365296,
+          0.35342325036954525
+        ],
+        "Nifty Media_lag1_pct": [
+          -0.06738699506623404,
+          0.039549917869590036
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.2821600480065991,
+      "focus_p_value": 8.473150872744057e-15,
+      "focus_ci95": [
+        0.21089684564365296,
+        0.35342325036954525
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 1.3557041396390492e-13,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Metal": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.047735344032571736,
+      "coefficients": {
+        "const": 0.06391741134889005,
+        "sp500_return_pct": 0.3466803520977813,
+        "Nifty Metal_lag1_pct": -0.06196518944356932
+      },
+      "standard_errors_hac": {
+        "const": 0.0345908554314197,
+        "sp500_return_pct": 0.07258685034217965,
+        "Nifty Metal_lag1_pct": 0.029099238191376303
+      },
+      "p_values": {
+        "const": 0.06462948747454303,
+        "sp500_return_pct": 1.7874839164901794e-06,
+        "Nifty Metal_lag1_pct": 0.033217568185299
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.003879419491124275,
+          0.13171424218890437
+        ],
+        "sp500_return_pct": [
+          0.20441273967591028,
+          0.48894796451965233
+        ],
+        "Nifty Metal_lag1_pct": [
+          -0.11899864827621934,
+          -0.0049317306109193035
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.3466803520977813,
+      "focus_p_value": 1.7874839164901794e-06,
+      "focus_ci95": [
+        0.20441273967591028,
+        0.48894796451965233
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 2.3237290914372332e-05,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Pharma": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.020609451581189098,
+      "coefficients": {
+        "const": 0.03215734680210672,
+        "sp500_return_pct": 0.15652545195702863,
+        "Nifty Pharma_lag1_pct": -0.008864136324471883
+      },
+      "standard_errors_hac": {
+        "const": 0.024056531653233508,
+        "sp500_return_pct": 0.050520633619576115,
+        "Nifty Pharma_lag1_pct": 0.037451110316971924
+      },
+      "p_values": {
+        "const": 0.18130726677138553,
+        "sp500_return_pct": 0.0019466845109425688,
+        "Nifty Pharma_lag1_pct": 0.8129007525231234
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.014992588831178766,
+          0.0793072824353922
+        ],
+        "sp500_return_pct": [
+          0.05750682958651601,
+          0.2555440743275412
+        ],
+        "Nifty Pharma_lag1_pct": [
+          -0.0822669637267733,
+          0.06453869107782953
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.15652545195702863,
+      "focus_p_value": 0.0019466845109425688,
+      "focus_ci95": [
+        0.05750682958651601,
+        0.2555440743275412
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 0.003298495579536852,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Private Bank": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.04411585091486747,
+      "coefficients": {
+        "const": 0.031343174515903474,
+        "sp500_return_pct": 0.26442360805002235,
+        "Nifty Private Bank_lag1_pct": -0.016742878944956404
+      },
+      "standard_errors_hac": {
+        "const": 0.026973747253774275,
+        "sp500_return_pct": 0.07045964871653666,
+        "Nifty Private Bank_lag1_pct": 0.029603349994272287
+      },
+      "p_values": {
+        "const": 0.2452402807381402,
+        "sp500_return_pct": 0.00017484423927309465,
+        "Nifty Private Bank_lag1_pct": 0.5716835472199429
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.021524398629580298,
+          0.08421074766138725
+        ],
+        "sp500_return_pct": [
+          0.12632523420226666,
+          0.40252198189777805
+        ],
+        "Nifty Private Bank_lag1_pct": [
+          -0.0747643787554641,
+          0.0412786208655513
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.26442360805002235,
+      "focus_p_value": 0.00017484423927309465,
+      "focus_ci95": [
+        0.12632523420226666,
+        0.40252198189777805
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 0.0006993769570923786,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty PSU Bank": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.013933148685936758,
+      "coefficients": {
+        "const": 0.04667669748311561,
+        "sp500_return_pct": 0.21789841773553564,
+        "Nifty PSU Bank_lag1_pct": -0.020836137742638306
+      },
+      "standard_errors_hac": {
+        "const": 0.0416037421016654,
+        "sp500_return_pct": 0.06003471287406797,
+        "Nifty PSU Bank_lag1_pct": 0.031445971929983135
+      },
+      "p_values": {
+        "const": 0.2618900463042393,
+        "sp500_return_pct": 0.0002839262577898205,
+        "Nifty PSU Bank_lag1_pct": 0.5075860216744554
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.034865138658241306,
+          0.12821853362447252
+        ],
+        "sp500_return_pct": [
+          0.10023254268015931,
+          0.335564292790912
+        ],
+        "Nifty PSU Bank_lag1_pct": [
+          -0.08246911018426274,
+          0.04079683469898614
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.21789841773553564,
+      "focus_p_value": 0.0002839262577898205,
+      "focus_ci95": [
+        0.10023254268015931,
+        0.335564292790912
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 0.0008517787733694615,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty PSE": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.026080805147052466,
+      "coefficients": {
+        "const": 0.03630514653464224,
+        "sp500_return_pct": 0.19951024999257588,
+        "Nifty PSE_lag1_pct": -0.02442515947814829
+      },
+      "standard_errors_hac": {
+        "const": 0.027084987234663554,
+        "sp500_return_pct": 0.047892520705970984,
+        "Nifty PSE_lag1_pct": 0.04532655860681099
+      },
+      "p_values": {
+        "const": 0.1801101813770546,
+        "sp500_return_pct": 3.1027434246981194e-05,
+        "Nifty PSE_lag1_pct": 0.5899759978761684
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.01678045296702544,
+          0.08939074603630992
+        ],
+        "sp500_return_pct": [
+          0.10564263428003395,
+          0.2933778657051178
+        ],
+        "Nifty PSE_lag1_pct": [
+          -0.11326358189064184,
+          0.06441326293434527
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.19951024999257588,
+      "focus_p_value": 3.1027434246981194e-05,
+      "focus_ci95": [
+        0.10564263428003395,
+        0.2933778657051178
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 0.0003102743424698119,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Realty": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.030805196685305014,
+      "coefficients": {
+        "const": 0.05437450431592516,
+        "sp500_return_pct": 0.25985607105473085,
+        "Nifty Realty_lag1_pct": 0.05620609816741921
+      },
+      "standard_errors_hac": {
+        "const": 0.03689022073757411,
+        "sp500_return_pct": 0.0647600585762455,
+        "Nifty Realty_lag1_pct": 0.02522073872435053
+      },
+      "p_values": {
+        "const": 0.14049386086081642,
+        "sp500_return_pct": 6.0054175579570134e-05,
+        "Nifty Realty_lag1_pct": 0.02584274956782287
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.017928999711452724,
+          0.12667800834330303
+        ],
+        "sp500_return_pct": [
+          0.13292868860858542,
+          0.3867834535008763
+        ],
+        "Nifty Realty_lag1_pct": [
+          0.006774358604197506,
+          0.10563783773064092
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.25985607105473085,
+      "focus_p_value": 6.0054175579570134e-05,
+      "focus_ci95": [
+        0.13292868860858542,
+        0.3867834535008763
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 0.0004608701984849008,
+      "reject_h0_after_holm_across_indices": true
+    },
+    "Nifty Services Sector": {
+      "status": "tested",
+      "n": 2450,
+      "r_squared": 0.07895017171600482,
+      "coefficients": {
+        "const": 0.03296365972378849,
+        "sp500_return_pct": 0.2854119057524698,
+        "Nifty Services Sector_lag1_pct": -0.08123715010365505
+      },
+      "standard_errors_hac": {
+        "const": 0.020967653530184628,
+        "sp500_return_pct": 0.06073848466620727,
+        "Nifty Services Sector_lag1_pct": 0.0332799093379789
+      },
+      "p_values": {
+        "const": 0.11592280965167555,
+        "sp500_return_pct": 2.6140123459834612e-06,
+        "Nifty Services Sector_lag1_pct": 0.014645568457922262
+      },
+      "confidence_intervals_95": {
+        "const": [
+          -0.008132186035687508,
+          0.07405950548326448
+        ],
+        "sp500_return_pct": [
+          0.16636666333116518,
+          0.4044571481737744
+        ],
+        "Nifty Services Sector_lag1_pct": [
+          -0.14646457381485192,
+          -0.01600972639245818
+        ]
+      },
+      "focus_predictor": "sp500_return_pct",
+      "focus_estimate": 0.2854119057524698,
+      "focus_p_value": 2.6140123459834612e-06,
+      "focus_ci95": [
+        0.16636666333116518,
+        0.4044571481737744
+      ],
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "rows_dropped_for_missing": 200,
+      "p_value_holm_across_indices": 3.136814815180154e-05,
+      "reject_h0_after_holm_across_indices": true
+    }
+  },
+  "pairwise_slope_tests": [
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.012084650531718897,
+      "p_value": 0.6739526957090218,
+      "ci95": [
+        -0.04421158223729112,
+        0.0683808833007289
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Commodities",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.013100735623987439,
+      "p_value": 0.44230546205952725,
+      "ci95": [
+        -0.020319506927347554,
+        0.046520978175322435
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Energy",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.050353492884228315,
+      "p_value": 0.026131930821909878,
+      "ci95": [
+        0.005982926670144065,
+        0.09472405909831257
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty FMCG",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.13861220425893941,
+      "p_value": 3.911105361117444e-06,
+      "ci95": [
+        0.07975780301981186,
+        0.19746660549806697
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.00045759932725074093,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Financial Services",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 4.64099356438421e-05,
+      "p_value": 0.9987807621101975,
+      "ci95": [
+        -0.05948011077782789,
+        0.05957293064911558
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.0605565647495108,
+      "p_value": 0.0009509744676477758,
+      "ci95": [
+        0.024640828694326836,
+        0.09647230080469477
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.09224452336183425,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.07537657728625986,
+      "p_value": 0.02518180584813578,
+      "ci95": [
+        -0.14137104989210258,
+        -0.009382104680417142
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.010252555434002816,
+      "p_value": 0.8462959724808957,
+      "ci95": [
+        -0.11391512207554105,
+        0.09341001120753542
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.05897759106444143,
+      "p_value": 0.09099425456821171,
+      "ci95": [
+        -0.12736925102323585,
+        0.009414068894352985
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.11419609471101032,
+      "p_value": 0.0004427368889134111,
+      "ci95": [
+        0.05048780652910462,
+        0.17790438289291602
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.045638248167085525,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.009502561170631566,
+      "p_value": 0.7454912005295536,
+      "ci95": [
+        -0.047876479436792276,
+        0.06688160177805541
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.058531134675572825,
+      "p_value": 0.11115948444216385,
+      "ci95": [
+        -0.01348310833082169,
+        0.13054537768196733
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.07316324870173882,
+      "p_value": 0.004324665666483443,
+      "ci95": [
+        0.02290931652504246,
+        0.12341718087843517
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.38921990998350986,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.001499506760841837,
+      "p_value": 0.9585533539024788,
+      "ci95": [
+        -0.058051997069223704,
+        0.05505298354754003
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Auto",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.00034361819760100225,
+      "p_value": 0.9882629201221648,
+      "ci95": [
+        -0.04543773063432638,
+        0.04612496702952838
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Commodities",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.001093852188570557,
+      "p_value": 0.966205578730333,
+      "ci95": [
+        -0.05169633972462553,
+        0.04950863534748442
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Energy",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.03633131207847888,
+      "p_value": 0.19117300782084057,
+      "ci95": [
+        -0.018145883068101595,
+        0.09080850722505936
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty FMCG",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.1243256039188842,
+      "p_value": 0.0011558968462016851,
+      "ci95": [
+        0.04933858669566765,
+        0.19931262114210074
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.11096609723536177,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Financial Services",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.01144282589302038,
+      "p_value": 0.16976282897729444,
+      "ci95": [
+        -0.027777915048869523,
+        0.004892263262828763
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.04715051914876894,
+      "p_value": 0.02813621284833359,
+      "ci95": [
+        0.005056103371700836,
+        0.08924493492583704
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.08851623748525762,
+      "p_value": 0.049230640099875246,
+      "ci95": [
+        -0.17673429347571423,
+        -0.0002981814948010003
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.020910351893837907,
+      "p_value": 0.7377578669688021,
+      "ci95": [
+        -0.1433135802993026,
+        0.10149287651162678
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.07158949106421182,
+      "p_value": 0.09121375586872452,
+      "ci95": [
+        -0.15466253098617305,
+        0.01148354885774941
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.0993311353306548,
+      "p_value": 0.0269275846985942,
+      "ci95": [
+        0.01134033543081897,
+        0.18732193523049062
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.002766328700311356,
+      "p_value": 0.5632916968406727,
+      "ci95": [
+        -0.012147449478347422,
+        0.00661479207772471
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.046217120456015566,
+      "p_value": 0.2510796808336878,
+      "ci95": [
+        -0.03270721055627681,
+        0.12514145146830793
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.059696038738506915,
+      "p_value": 0.09514990695417323,
+      "ci95": [
+        -0.010413962092631457,
+        0.1298060395696453
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.014555025770302014,
+      "p_value": 0.6720737957524785,
+      "ci95": [
+        -0.08194715015064499,
+        0.05283709861004096
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Bank",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.012620432603543884,
+      "p_value": 0.41572034920038514,
+      "ci95": [
+        -0.043013053305899746,
+        0.017772188098811974
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Energy",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.03712660180685057,
+      "p_value": 0.00356091769405504,
+      "ci95": [
+        0.012160690723788007,
+        0.06209251288991313
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.3240435101590086,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty FMCG",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.1268355933865573,
+      "p_value": 6.67754783773151e-06,
+      "ci95": [
+        0.0716382400471573,
+        0.18203294672595732
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.0007745955491768551,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Financial Services",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.011744237944865982,
+      "p_value": 0.668359108930086,
+      "ci95": [
+        -0.06547491764697472,
+        0.041986441757242754
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.04711127358162674,
+      "p_value": 0.00019499579948865407,
+      "ci95": [
+        0.022325725586157842,
+        0.07189682157709565
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.02105954634477464,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.08848894870965575,
+      "p_value": 0.00573470572820708,
+      "ci95": [
+        -0.1512691575646291,
+        -0.025708739854682375
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.4990676594250632,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.021844236404329077,
+      "p_value": 0.6560623390946292,
+      "ci95": [
+        -0.11797832832290749,
+        0.07428985551424934
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.07580340723098442,
+      "p_value": 0.007278225636463851,
+      "ci95": [
+        -0.1311614134727927,
+        -0.020445400989176146
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.6259274047358913,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.1007010443236894,
+      "p_value": 0.00090499165352957,
+      "ci95": [
+        0.04122542563475992,
+        0.16017666301261888
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.08868918204589786,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.001220303857509284,
+      "p_value": 0.9637221068807359,
+      "ci95": [
+        -0.05380560444565309,
+        0.05136499673063452
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.04472783135973259,
+      "p_value": 0.14628449088801965,
+      "ci95": [
+        -0.015615001881680739,
+        0.10507066460114592
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.06038006346692908,
+      "p_value": 0.00041234874101564516,
+      "ci95": [
+        0.02687467904043704,
+        0.09388544789342113
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.04329661780664274,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.014424481186041536,
+      "p_value": 0.5561638012619505,
+      "ci95": [
+        -0.0624603453489468,
+        0.033611382976863724
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Commodities",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.012627654712006345,
+      "p_value": 0.5238423842910858,
+      "ci95": [
+        -0.05145482767328433,
+        0.026199518249271643
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty FMCG",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.08627110680574464,
+      "p_value": 0.001832030781494179,
+      "ci95": [
+        0.032009920838793164,
+        0.1405322927726961
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.17221089346045282,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Financial Services",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.048934594605232584,
+      "p_value": 0.09102595603101099,
+      "ci95": [
+        -0.1056857485412979,
+        0.007816559330832737
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.010659233370757169,
+      "p_value": 0.4512978287737919,
+      "ci95": [
+        -0.01707608318449116,
+        0.038394549926005495
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.1260012707654971,
+      "p_value": 0.00017020877535644277,
+      "ci95": [
+        -0.19168916976845604,
+        -0.060313371762538176
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.018722965289208703,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.061837209809816863,
+      "p_value": 0.23068899044322277,
+      "ci95": [
+        -0.16295528631890718,
+        0.03928086669927346
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.11360114528784213,
+      "p_value": 0.0006609302004717974,
+      "ci95": [
+        -0.1789858660690646,
+        -0.04821642450661964
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.06741488044812333,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.06291371290690007,
+      "p_value": 0.03673114514898274,
+      "ci95": [
+        0.003878783380660146,
+        0.12194864243313999
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.03846016231736082,
+      "p_value": 0.18145970042298964,
+      "ci95": [
+        -0.09487114361148058,
+        0.017950818976758952
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.007801994055060591,
+      "p_value": 0.8179263819411928,
+      "ci95": [
+        -0.058621873098113286,
+        0.07422586120823446
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.021655601313094172,
+      "p_value": 0.2007354954332189,
+      "ci95": [
+        -0.011517951849542532,
+        0.054829154475730876
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.052127780358845806,
+      "p_value": 0.056198618607617594,
+      "ci95": [
+        -0.10563340275281385,
+        0.0013778420351222495
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Energy",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.04984648966054183,
+      "p_value": 0.019513074416803698,
+      "ci95": [
+        -0.09167647207833042,
+        -0.00801650724275324
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Financial Services",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.13710495258843877,
+      "p_value": 0.0008590355846921803,
+      "ci95": [
+        -0.2177283539682676,
+        -0.056481551208609954
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.08504452288452585,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.07922921221981526,
+      "p_value": 0.004555053409540424,
+      "ci95": [
+        -0.1339668201098456,
+        -0.024491604329784915
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.40539975344909773,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.21252552328408297,
+      "p_value": 2.1378469660506555e-09,
+      "ci95": [
+        -0.2821003319180151,
+        -0.14295071465015088
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 2.5654163592607864e-07,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.15091684221189722,
+      "p_value": 0.0003419041726862996,
+      "ci95": [
+        -0.23351046610472348,
+        -0.06832321831907097
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.03658374647743406,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.20220921390695396,
+      "p_value": 5.164475337293361e-05,
+      "ci95": [
+        -0.30011367956651636,
+        -0.10430474824739153
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.0058358571311414986,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.024767179381957438,
+      "p_value": 0.37389046520922187,
+      "ci95": [
+        -0.07935811238531454,
+        0.029823753621399662
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.12514950572930814,
+      "p_value": 0.0012055297939715598,
+      "ci95": [
+        -0.20091269689843938,
+        -0.049386314560176905
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.11452533042729818,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.0813840791139225,
+      "p_value": 0.07327616695708342,
+      "ci95": [
+        -0.17044067186424694,
+        0.007672513636401951
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.0648017156211318,
+      "p_value": 0.01985070296407049,
+      "ci95": [
+        -0.11933173672679764,
+        -0.010271694515465946
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.13556040139273656,
+      "p_value": 0.0003908077928973107,
+      "ci95": [
+        -0.21048353312432022,
+        -0.060637269661152904
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.04142562604711494,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty FMCG",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.13808584950709074,
+      "p_value": 2.5152640095808937e-05,
+      "ci95": [
+        -0.20231940049165043,
+        -0.07385229852253104
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.002892553611018028,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Infrastructure",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.05959104875745094,
+      "p_value": 0.007633810889367555,
+      "ci95": [
+        0.01581187583846838,
+        0.1033702216764335
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.6488739255962421,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.0762155325188746,
+      "p_value": 0.08974076411444314,
+      "ci95": [
+        -0.16425338293279818,
+        0.011822317895048978
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.009261591627820464,
+      "p_value": 0.8872427520132525,
+      "ci95": [
+        -0.13728104698398041,
+        0.11875786372833948
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.060247308528021154,
+      "p_value": 0.15432681376026283,
+      "ci95": [
+        -0.14314637988001574,
+        0.022651762823973437
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.11188088013833208,
+      "p_value": 0.018144174353192637,
+      "ci95": [
+        0.019069284917365856,
+        0.2046924753592983
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.008378248369361803,
+      "p_value": 0.42167787359079867,
+      "ci95": [
+        -0.012058322628567653,
+        0.02881481936729126
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.057720048632360035,
+      "p_value": 0.15404878471908845,
+      "ci95": [
+        -0.02164798004227371,
+        0.1370880773069938
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.07177832612670267,
+      "p_value": 0.05175220025397824,
+      "ci95": [
+        -0.0005451925814511371,
+        0.14410184483485647
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.0027159623771930005,
+      "p_value": 0.9362546872614552,
+      "ci95": [
+        -0.06927405223489212,
+        0.06384212748050612
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Financial Services",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -3.1115613081598376e-05,
+      "p_value": 0.998275693559382,
+      "ci95": [
+        -0.02825077233896343,
+        0.028188541112800235
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty IT",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.13562652635532882,
+      "p_value": 7.641460611018022e-05,
+      "ci95": [
+        -0.20283206019985314,
+        -0.0684209925108045
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.008482021278230004,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.06928316830706584,
+      "p_value": 0.17978204851215618,
+      "ci95": [
+        -0.17051310821458257,
+        0.031946771600450896
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.12221771565967282,
+      "p_value": 0.0004388293092988993,
+      "ci95": [
+        -0.1903554780208513,
+        -0.054079953298494354
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.045638248167085525,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.053639982436130926,
+      "p_value": 0.1014361872319134,
+      "ci95": [
+        -0.010546154912317432,
+        0.11782611978457928
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.049512254571616066,
+      "p_value": 0.029158550577149032,
+      "ci95": [
+        -0.09399977135957857,
+        -0.00502473778365356
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.0029215700281892817,
+      "p_value": 0.9301937242547422,
+      "ci95": [
+        -0.06828800648101234,
+        0.062444866424633774
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.012116340899681347,
+      "p_value": 0.5763847340536309,
+      "ci95": [
+        -0.030390780209777722,
+        0.054623462009140415
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.06272877274885291,
+      "p_value": 0.014609956680957858,
+      "ci95": [
+        -0.11307720691100145,
+        -0.012380338586704363
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Infrastructure",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.05994510524774199,
+      "p_value": 0.0001870734644294101,
+      "ci95": [
+        -0.09139440840386481,
+        -0.028495802091619178
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.020391007622805702,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Media",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.06462080712969605,
+      "p_value": 0.2606615349963016,
+      "ci95": [
+        -0.0479780528849932,
+        0.1772196671443853
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.014530502208648545,
+      "p_value": 0.7196408551617866,
+      "ci95": [
+        -0.06481243626967527,
+        0.09387344068697236
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.18906787426432195,
+      "p_value": 7.892311373452597e-09,
+      "ci95": [
+        0.12485321904753025,
+        0.2532825294811136
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 9.39185053440859e-07,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.08592486288110339,
+      "p_value": 0.06113289619264784,
+      "ci95": [
+        -0.004011941226219409,
+        0.1758616669884262
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.13397690478553084,
+      "p_value": 0.0006709533550137739,
+      "ci95": [
+        0.05677140114760337,
+        0.2111824084234583
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.06776628885639116,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.14791431546401895,
+      "p_value": 1.0418431571618573e-06,
+      "ci95": [
+        0.0885505763574425,
+        0.2072780545705954
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.00012293749254509915,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.07500308837365859,
+      "p_value": 0.02922385928141055,
+      "ci95": [
+        0.007584384250402754,
+        0.14242179249691442
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty IT",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.07584697802580176,
+      "p_value": 0.015421540786356689,
+      "ci95": [
+        0.014477289914191775,
+        0.13721666613741174
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty Metal",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.058473403522304644,
+      "p_value": 0.3879568328658265,
+      "ci95": [
+        -0.19122212416878726,
+        0.07427531712417795
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.12448250389850762,
+      "p_value": 0.0149261521568599,
+      "ci95": [
+        0.024250541767912234,
+        0.224714466029103
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.01838682603916818,
+      "p_value": 0.7709123437429238,
+      "ci95": [
+        -0.10537615274033764,
+        0.142149804818674
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.06399915725483957,
+      "p_value": 0.26638367452024136,
+      "ci95": [
+        -0.04886097802591405,
+        0.17685929253559318
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.08399817830548346,
+      "p_value": 0.06334546313141362,
+      "ci95": [
+        -0.004668909283427822,
+        0.17266526589439474
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.001488907835860494,
+      "p_value": 0.9788476002501002,
+      "ci95": [
+        -0.10857513011531299,
+        0.11155294578703397
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Media",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.009224015498380346,
+      "p_value": 0.8755396926200822,
+      "ci95": [
+        -0.10620222414320521,
+        0.12465025513996592
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty Pharma",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.17561396850985866,
+      "p_value": 3.7082634130583494e-05,
+      "ci95": [
+        0.09217110859610701,
+        0.25905682842361033
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.004227420290886518,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.06892608693717338,
+      "p_value": 0.11255369869274395,
+      "ci95": [
+        -0.016208177539083143,
+        0.15406035141342989
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.11840557306660586,
+      "p_value": 0.0008276657601699205,
+      "ci95": [
+        0.04899343733281479,
+        0.18781770880039694
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.08276657601699206,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.14003541832843336,
+      "p_value": 5.383128028542393e-05,
+      "ci95": [
+        0.0720707295390992,
+        0.2080001071177675
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.00602910339196748,
+      "alpha": 0.05,
+      "reject_h0_after_holm": true
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.05658303577560527,
+      "p_value": 0.08395405142639835,
+      "ci95": [
+        -0.007588537511676645,
+        0.12075460906288718
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Metal",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.060242798783643005,
+      "p_value": 0.09027987163931316,
+      "ci95": [
+        -0.009461491053225878,
+        0.12994708862051188
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Pharma",
+      "index_b": "Nifty Private Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.1016657209620186,
+      "p_value": 0.02593268812536399,
+      "ci95": [
+        -0.19113209800058545,
+        -0.012199343923451747
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Pharma",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.05554789064395963,
+      "p_value": 0.2130959197986848,
+      "ci95": [
+        -0.14298832538910625,
+        0.03189254410118699
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Pharma",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.040883016900518654,
+      "p_value": 0.1746488250953543,
+      "ci95": [
+        -0.0999137014527311,
+        0.018147667651693795
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Pharma",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.11457139569927724,
+      "p_value": 0.0019627208755068695,
+      "ci95": [
+        -0.18710665177388444,
+        -0.04203613962467004
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.18253304142213886,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Pharma",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.1129857718263546,
+      "p_value": 0.00227923128907071,
+      "ci95": [
+        -0.18556295832397407,
+        -0.04040858532873513
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.20968927859450534,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Private Bank",
+      "index_b": "Nifty PSU Bank",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.04886044936816386,
+      "p_value": 0.25160500980360234,
+      "ci95": [
+        -0.034670375519103194,
+        0.1323912742554309
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Private Bank",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.0617906459452529,
+      "p_value": 0.09356945905521635,
+      "ci95": [
+        -0.010432015453176506,
+        0.1340133073436823
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Private Bank",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.012175926077491636,
+      "p_value": 0.7321240202384954,
+      "ci95": [
+        -0.08189334721340301,
+        0.05754149505841973
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Private Bank",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.009861400538038098,
+      "p_value": 0.5603185380770108,
+      "ci95": [
+        -0.04304999511489829,
+        0.023327194038822094
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty PSU Bank",
+      "index_b": "Nifty PSE",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.017185406447846902,
+      "p_value": 0.5491366116952734,
+      "ci95": [
+        -0.03904116990302749,
+        0.07341198279872128
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty PSU Bank",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.06205991767111131,
+      "p_value": 0.05065541215735913,
+      "ci95": [
+        -0.12429691303969578,
+        0.00017707769747315333
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty PSU Bank",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.057781520965424854,
+      "p_value": 0.09245049759089094,
+      "ci95": [
+        -0.12508746793033132,
+        0.009524425999481612
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty PSE",
+      "index_b": "Nifty Realty",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.07579961017408088,
+      "p_value": 0.005671223402557536,
+      "ci95": [
+        -0.12950651524795276,
+        -0.022092705100208998
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.4990676594250632,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty PSE",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": -0.07202060091271169,
+      "p_value": 0.008677913123369695,
+      "ci95": [
+        -0.12580546777444684,
+        -0.018235734050976532
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 0.7289447023630544,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    },
+    {
+      "hypothesis_family": "H7_prior_us_return_slope_difference",
+      "index_a": "Nifty Realty",
+      "index_b": "Nifty Services Sector",
+      "null_hypothesis": "Prior S&P 500 return slope equal across indices, controlling for differential own-lag return",
+      "alternative_hypothesis": "Prior S&P 500 return slope differs across indices",
+      "focus_predictor": "sp500_return_pct",
+      "slope_difference_estimate": 0.0012409774317799383,
+      "p_value": 0.9628163166595206,
+      "ci95": [
+        -0.05093160515033717,
+        0.05341356001389704
+      ],
+      "n": 2450,
+      "status": "tested",
+      "method": "OLS with Newey-West/HAC standard errors (maxlags=5)",
+      "small_sample_warning": false,
+      "p_value_holm_within_family": 1.0,
+      "alpha": 0.05,
+      "reject_h0_after_holm": false
+    }
+  ],
+  "alignment_rule": "For each Indian trading date, merge with the latest S&P 500 close strictly before that date (allow_exact_matches=False).",
+  "timing_caveat": "The supplied S&P source is historical daily data; source/license and timezone conventions should be verified. Association is not causation or proof of a trading strategy."
+}
